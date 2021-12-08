@@ -1,0 +1,52 @@
+@import '../../constants/colors.scss';
+
+section#search-ressource-filters {
+  padding-bottom: 20px;
+
+  > .dropdown-filters {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 20px;
+
+    > .habilitation-wrapper {
+      margin: 0 20px;
+
+      > div.toggle {
+        min-width: 170px;
+        height: 38px;
+        display: flex;
+        align-items: center;
+      }
+      > div.label {
+        line-height: 18px;
+        font-weight: 600;
+        color: $darkestGrey;
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: flex-start;
+
+      label {
+        margin-top: 1em;
+      }
+
+      > .habilitation-wrapper {
+        margin: 10px 0;
+      }
+    }
+  }
+
+  > .searchbar-filter {
+    display: flex;
+    justify-content: space-around;
+
+    @media (max-width: 768px) {
+      justify-content: flex-start;
+    }
+  }
+}

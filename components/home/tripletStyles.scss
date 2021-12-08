@@ -1,0 +1,27 @@
+@import '../../constants/colors.scss';
+
+section#api-triplet {
+  background: $backgroundRedGradient;
+  padding: 50px 0;
+
+  h3 {
+    color: #fff;
+    font-weight: 400;
+    padding-bottom: 10px;
+  }
+  > div:last-child {
+    padding: 40px 0 0;
+  }
+}
+
+section#article-triplet {
+  padding: 50px 0;
+
+  h3 {
+    font-weight: 400;
+    padding-bottom: 10px;
+  }
+  > div:last-child {
+    padding: 40px 0 0;
+  }
+}

@@ -1,0 +1,109 @@
+section#pre-footer {
+  border-top: 1px solid #00009111;
+
+  > div {
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      > p {
+        font-weight: bold;
+        font-size: 1.4rem;
+        line-height: 2.1rem;
+      }
+    }
+    @media (max-width: 768px) {
+      flex-direction: column;
+      > div {
+        > div {
+          margin: 20px 0;
+        }
+      }
+    }
+  }
+}
+
+#footer {
+  padding-top: 0;
+  border-top: 3px #fff solid;
+
+  .nav {
+    margin-left: 0;
+    list-style: none;
+  }
+  ul > li:before {
+    display: node;
+    content: '';
+  }
+
+  .footer__inner {
+    position: relative;
+    padding-top: 1.33rem;
+    padding-bottom: 1.33rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: #4a4b4b;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .footer__identite {
+      position: initial;
+    }
+    .footer__identite:first-child {
+      margin-left: 0%;
+    }
+
+    .footer__items {
+      display: flex;
+      flex-direction: row;
+
+      a {
+        padding: 0.25rem 0;
+        font-size: 13.6px;
+        font-size: 0.85rem;
+        color: #fff;
+        box-shadow: none;
+      }
+    }
+
+    .footer__liens-utiles {
+      margin-left: 1.5rem;
+    }
+    .footer__plan li:not(:last-child),
+    .footer__liens-utiles li:not(:last-child) {
+      border-bottom: 1px solid #575858;
+      padding-bottom: 0.2rem;
+    }
+  }
+}
+
+@media all and (max-width: 800px) {
+  #footer .footer__inner .footer__items {
+    flex-direction: column;
+  }
+  #footer .footer__inner {
+    justify-content: space-around;
+  }
+  #footer .footer__inner .footer__liens-utiles {
+    margin-left: 0;
+  }
+
+  section#pre-footer > div > div > p {
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+  }
+}
