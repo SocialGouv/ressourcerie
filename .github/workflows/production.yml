@@ -47,6 +47,7 @@ jobs:
       uses: SocialGouv/actions/autodevops-manifests@v1
       with:
         environment: prod
+        productionNamespace: fabrique
         rancherId: ${{ secrets.RANCHER_PROJECT_ID }}
         socialgouvBaseDomain: ${{ secrets.SOCIALGOUV_BASE_DOMAIN }}
 
