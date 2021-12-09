@@ -47,6 +47,8 @@ jobs:
         environment: dev
         rancherId: ${{ secrets.RANCHER_PROJECT_ID }}
         socialgouvBaseDomain: ${{ secrets.SOCIALGOUV_BASE_DOMAIN }}
+      env:
+        NODE_OPTIONS: '--max_old_space_size=4096'
 
   ##############################################################################
   ## DEPLOY APPLICATION OVER KUBERNETES

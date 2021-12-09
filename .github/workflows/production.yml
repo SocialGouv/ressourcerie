@@ -50,6 +50,8 @@ jobs:
         productionNamespace: fabrique
         rancherId: ${{ secrets.RANCHER_PROJECT_ID }}
         socialgouvBaseDomain: ${{ secrets.SOCIALGOUV_BASE_DOMAIN }}
+      env:
+        NODE_OPTIONS: '--max_old_space_size=4096'
 
     - name: Use autodevops deployment
       uses: SocialGouv/actions/autodevops-deploy@v1
