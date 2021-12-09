@@ -2,5 +2,6 @@
   "type": "app",
   "registry": "ghcr",
   "project": "fabrique",
-  "name": "ressourcerie"
+  "name": "ressourcerie",
+  "subdomain": "ressourcerie"
 }
