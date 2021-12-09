@@ -1,3 +1,10 @@
+# [1.0.0-alpha.2](https://github.com/SocialGouv/ressourcerie/compare/v1.0.0-alpha.1...v1.0.0-alpha.2) (2021-12-09)
+
+
+### Bug Fixes
+
+* Set production namespace ([b444b28](https://github.com/SocialGouv/ressourcerie/commit/b444b283f26407713940b6055b93ac2dc2700da7))
+
 # 1.0.0-alpha.1 (2021-12-09)
 
 
