@@ -4,7 +4,7 @@
   "repository": "https://github.com/SocialGouv/ressourcerie",
   "license": "AGPL-3.0-or-later",
   "node": "=16.4",
-  "public": false,
+  "private": true,
   "scripts": {
     "sitemap": "node node-scripts/saveUrlList.js && node ./node_modules/sitemap/dist/cli.js < ./public/url-list.txt > ./public/sitemap.xml",
     "dev": "NODE_ENV=development next",
