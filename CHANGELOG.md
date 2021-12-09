@@ -1,3 +1,10 @@
+# [1.0.0-alpha.4](https://github.com/SocialGouv/ressourcerie/compare/v1.0.0-alpha.3...v1.0.0-alpha.4) (2021-12-09)
+
+
+### Bug Fixes
+
+* add NODE_OPTIONS ([2e81b13](https://github.com/SocialGouv/ressourcerie/commit/2e81b132580e815ebe27ee2db3096a8d8aa9e5f1))
+
 # [1.0.0-alpha.3](https://github.com/SocialGouv/ressourcerie/compare/v1.0.0-alpha.2...v1.0.0-alpha.3) (2021-12-09)
 
 
