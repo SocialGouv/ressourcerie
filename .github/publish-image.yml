@@ -1,0 +1,32 @@
+name: publish-ressourcerie-images
+on:
+  release:
+    types: [published]
+jobs:
+  push_to_registry:
+    name: Push Docker images to GitHub Packages
+    runs-on: ubuntu-latest
+    permissions:
+      packages: write
+      contents: read
+    steps:
+      - name: Lowercase repo and tag
+        run: |
+          echo IMAGE_REPOSITORY=$(echo ${{ github.repository }} | tr '[:upper:]' '[:lower:]') >> $GITHUB_ENV
+          echo IMAGE_TAG=$(echo ${{ github.ref }} | tr '[:upper:]' '[:lower:]' | awk '{split($0,a,"/"); print a[3]}') >> $GITHUB_ENV
+      - name: Check out the repo
+        uses: actions/checkout@v2
+      - name: Log in to GitHub Docker Registry
+        uses: docker/login-action@v1
+        with:
+          registry: docker.pkg.github.com
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - name: Build next image
+        uses: docker/build-push-action@v2
+        with:
+          context: ./
+          push: true
+          tags: |
+            docker.pkg.github.com/${{ env.IMAGE_REPOSITORY }}/ressourcerie:${{ github.sha }}
+            docker.pkg.github.com/${{ env.IMAGE_REPOSITORY }}/ressoucerie:${{ env.IMAGE_TAG }}
