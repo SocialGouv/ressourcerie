@@ -18,6 +18,7 @@ themes:
   - FORGE IA
 kind:
   - Code source
+  - IA
 contact_link: support@pole-emploi.io
 doc_tech_link: https://fr.openfisca.org/api/latest/spec
 visits_2019: 18000

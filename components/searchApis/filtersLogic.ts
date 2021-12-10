@@ -107,7 +107,7 @@ export const computeSearchResults = (needles: string[]) => {
           title: [...matches.title, ...finder(api.title)],
           tagline: [...matches.tagline, ...finder(api.tagline)],
           owner: [...matches.owner, ...finder(api.owner)],
-          kind: [...matches.kind, ...finder(api.kind)],
+          kind: [...matches.kind, ...finder(api.kind.toString())],
           owner_acronym: [
             ...matches.owner_acronym,
             ...finder(api.owner_acronym || ''),

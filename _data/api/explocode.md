@@ -21,6 +21,7 @@ themes:
   - Entreprise
 kind:
   - Code source
+  - IA
 contact_link: DSI-incubateur@sg.social.gouv.fr
 doc_tech_external: https://github.com/SocialGouv/code-du-travail-numerique/blob/master/README-dev.md
 visits_2019: 12000

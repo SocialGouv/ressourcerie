@@ -84,7 +84,7 @@ export interface IApiShort {
   uptime: number;
   title: string;
   path: string;
-  kind: string,
+  kind: string[],
   tagline: string;
   is_open: IIsApiOpen;
   is_france_connected: number | null;
@@ -125,7 +125,7 @@ export interface IApi extends IApiShort {
   owner_slug: string;
   owner_type: string;
   producer: string;
-  kind: string;
+  kind: string[];
   last_update: string;
   contact_link: string;
   external_site?: string;

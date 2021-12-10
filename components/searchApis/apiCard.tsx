@@ -16,7 +16,7 @@ interface IProps {
   is_open: IIsApiOpen;
   is_france_connected: number | null;
   owner: string;
-  kind: string;
+  kind: string[];
   matches?: ISearchMatch;
 }
 
@@ -27,7 +27,7 @@ const ApiCard: React.FC<IProps> = ({
   uptime = null,
   logo,
   owner,
-  kind,
+  kind = [],
   is_open,
   is_france_connected = 0,
   matches = {},
@@ -87,7 +87,7 @@ const ApiCard: React.FC<IProps> = ({
               <div className="badge contract">
                     
                     <div className="label-grid">
-                        <LabelKind kind={[kind]} />
+                        <LabelKind kind={kind} />
                     </div>
               </div>
               <div className="badge filler"></div>
