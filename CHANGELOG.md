@@ -1,3 +1,10 @@
+# [1.0.0-alpha.5](https://github.com/SocialGouv/ressourcerie/compare/v1.0.0-alpha.4...v1.0.0-alpha.5) (2021-12-10)
+
+
+### Bug Fixes
+
+* Bump version ([5bd998e](https://github.com/SocialGouv/ressourcerie/commit/5bd998e801cd45a24f0660a5b2be1329e784baec))
+
 # [1.0.0-alpha.4](https://github.com/SocialGouv/ressourcerie/compare/v1.0.0-alpha.3...v1.0.0-alpha.4) (2021-12-09)
 
 
