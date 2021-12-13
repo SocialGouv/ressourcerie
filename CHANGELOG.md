@@ -1,3 +1,17 @@
+# 1.0.0 (2021-12-13)
+
+
+### Bug Fixes
+
+* **workflows:** Add basic workflows and socialgouv config ([#3](https://github.com/SocialGouv/ressourcerie/issues/3)) ([d48157d](https://github.com/SocialGouv/ressourcerie/commit/d48157dd5e6376464917ad7fa001a9ffef311ba1))
+* add missing folders gitignore ([c6aeb21](https://github.com/SocialGouv/ressourcerie/commit/c6aeb218472026f693bfb0c2cd85ea190d6f7f13))
+
+
+### Features
+
+* article IA 1/2 ([cff4861](https://github.com/SocialGouv/ressourcerie/commit/cff4861ab96844a412583c1bda38b7f9abe39a4d))
+* article publicodes ([6fb6555](https://github.com/SocialGouv/ressourcerie/commit/6fb65555ed03b257066461fb795dabb5eaffbe03))
+
 # [1.0.0-alpha.5](https://github.com/SocialGouv/ressourcerie/compare/v1.0.0-alpha.4...v1.0.0-alpha.5) (2021-12-10)
 
 
