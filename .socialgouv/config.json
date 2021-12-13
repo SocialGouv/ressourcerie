@@ -1,0 +1,7 @@
+{
+  "type": "app",
+  "registry": "ghcr",
+  "project": "fabrique",
+  "name": "ressourcerie",
+  "subdomain": "ressourcerie"
+}
