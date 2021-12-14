@@ -16,6 +16,7 @@ Cette application utilise [Next.js](https://github.com/zeit/next.js).
 npm i
 ```
 
+
 2. Variables d’environnement
 
 Afin de configurer le projet correctement, il est conseillé de créer un fichier `.env` avec les variables d’environnement nécessaires à l’application.
