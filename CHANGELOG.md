@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/SocialGouv/ressourcerie/compare/v1.0.1...v1.0.2) (2021-12-17)
+
+
+### Bug Fixes
+
+* **ci:** fix prod namespace ([#8](https://github.com/SocialGouv/ressourcerie/issues/8)) ([4e0a891](https://github.com/SocialGouv/ressourcerie/commit/4e0a89106f42811dd4e4b153416c65a1c3afb3f6))
+
 ## [1.0.1](https://github.com/SocialGouv/ressourcerie/compare/v1.0.0...v1.0.1) (2021-12-13)
 
 
