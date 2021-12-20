@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/SocialGouv/ressourcerie/compare/v1.0.2...v1.0.3) (2021-12-20)
+
+
+### Bug Fixes
+
+* release ([7de6c98](https://github.com/SocialGouv/ressourcerie/commit/7de6c986da669ee0212345a2413035d429ddf09d))
+
 ## [1.0.2](https://github.com/SocialGouv/ressourcerie/compare/v1.0.1...v1.0.2) (2021-12-17)
 
 
