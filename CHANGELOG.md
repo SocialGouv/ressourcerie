@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/SocialGouv/ressourcerie/compare/v1.0.3...v1.1.0) (2022-02-11)
+
+
+### Features
+
+* add script analytics ([23b2f79](https://github.com/SocialGouv/ressourcerie/commit/23b2f79dcdf6df9f5717d94ea6d3c400e175ea65))
+
 ## [1.0.3](https://github.com/SocialGouv/ressourcerie/compare/v1.0.2...v1.0.3) (2021-12-20)
 
 
