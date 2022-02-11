@@ -50,6 +50,7 @@ class MyDocument extends Document {
 `,
             }}
           />
+          <script defer data-domain="ressourcerie.fabrique.social.gouv.fr" src="https://plausible.numericite.eu/js/plausible.js"></script>
         </Head>
 
         <body>
