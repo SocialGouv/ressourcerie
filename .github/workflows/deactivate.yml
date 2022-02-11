@@ -12,5 +12,4 @@ jobs:
     - uses: SocialGouv/actions/autodevops-deactivate@v1
       with:
         kube-config: ${{ secrets.KUBECONFIG  }}
-        rancherId: ${{ secrets.RANCHER_PROJECT_ID }}
-        socialgouvBaseDomain: ${{ secrets.SOCIALGOUV_BASE_DOMAIN }}
+        github-token: ${{ secrets.GITHUB_TOKEN }}
