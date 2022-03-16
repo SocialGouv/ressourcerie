@@ -54,7 +54,7 @@ Tout comme le terme “algorithmes”, celui d’“intelligence artificielle”
 Cependant, il est maintenant employé de manière courante pour parler d’algorithmes spécifiques : ceux qui reposent sur **l’apprentissage automatique (machine learning en anglais)**. En réalité, l’apprentissage automatique est un sous-ensemble de l’intelligence artificielle, mais les deux termes sont souvent confondus dans le débat public.
 
 <Centered>
-![Guide en ligne Etalab](/images/guides/diagramme_openia.png)
+![Diagramme cours Open IA OpenClassroom](/images/guides/diagramme_openia.png)
 </Centered>
 > > _<External href='https://openclassrooms.com/fr/courses/6417031-objectif-ia-initiez-vous-a-lintelligence-artificielle/6823506-apprehendez-le-deep-learning-ou-lapprentissage-profond'>Diagramme issu du cours “Open AI”</External> de Benjamin Ejzenberg et Anna Choury, disponible sur le site OpenClassrooms.fr, <External href='https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr'>licence CC BY-SA 4.0.</External>_
 
