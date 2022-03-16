@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/SocialGouv/ressourcerie/compare/v1.1.0...v1.1.1) (2022-03-16)
+
+
+### Bug Fixes
+
+* edit article IA ([f56b42f](https://github.com/SocialGouv/ressourcerie/commit/f56b42f0837dcf3d4944343b8d8811e57857a7e1))
+
 # [1.1.0](https://github.com/SocialGouv/ressourcerie/compare/v1.0.3...v1.1.0) (2022-02-11)
 
 
