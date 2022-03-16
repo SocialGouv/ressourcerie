@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/SocialGouv/ressourcerie/compare/v1.3.0...v1.3.1) (2022-03-16)
+
+
+### Bug Fixes
+
+* fix frameBorder on page stats ([400adfe](https://github.com/SocialGouv/ressourcerie/commit/400adfeb7b1a4f8c8eb428d3978fd450143300dd))
+
 # [1.3.0](https://github.com/SocialGouv/ressourcerie/compare/v1.2.0...v1.3.0) (2022-03-16)
 
 
