@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/SocialGouv/ressourcerie/compare/v1.2.0...v1.3.0) (2022-03-16)
+
+
+### Features
+
+* add page stats plausible ([5f645d9](https://github.com/SocialGouv/ressourcerie/commit/5f645d9aae791e6c2194c8ec8d5f965185d2311c))
+
 # [1.2.0](https://github.com/SocialGouv/ressourcerie/compare/v1.1.1...v1.2.0) (2022-03-16)
 
 
