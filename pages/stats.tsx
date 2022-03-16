@@ -15,7 +15,7 @@ const Stats: React.FC = ({ }) => {
             Statistiques <Emoji emoji="🧮" label="mathématiques" />
             </h1>
         </div>
-        <iframe plausible-embed src="https://plausible.numericite.eu/share/ressourcerie.fabrique.social.gouv.fr?auth=4hJPmWdeJF3eJk8tygXp1&embed=true&theme=light" scrolling="no" frameborder="0" loading="lazy" style={{width: '1px', minWidth: '100%', height: '1600px'}}></iframe>
+        <iframe plausible-embed src="https://plausible.numericite.eu/share/ressourcerie.fabrique.social.gouv.fr?auth=4hJPmWdeJF3eJk8tygXp1&embed=true&theme=light" scrolling="no" frameBorder="0" loading="lazy" style={{width: '1px', minWidth: '100%', height: '1600px'}}></iframe>
         <div style={{fontSize: '14px', paddingBottom: '14px'}}>
           Stats powered by 
           <a target="_blank" style={{color: '#4F46E5', textDecoration: 'underline'}} href="https://plausible.io">
