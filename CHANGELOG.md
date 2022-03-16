@@ -1,3 +1,10 @@
+## [1.3.2](https://github.com/SocialGouv/ressourcerie/compare/v1.3.1...v1.3.2) (2022-03-16)
+
+
+### Bug Fixes
+
+* add noreferer to page stats ([19f6f19](https://github.com/SocialGouv/ressourcerie/commit/19f6f19e945e9aa4f9ddb4d9c107e85f2af76f67))
+
 ## [1.3.1](https://github.com/SocialGouv/ressourcerie/compare/v1.3.0...v1.3.1) (2022-03-16)
 
 
