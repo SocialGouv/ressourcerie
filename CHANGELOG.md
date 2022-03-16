@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/SocialGouv/ressourcerie/compare/v1.1.1...v1.2.0) (2022-03-16)
+
+
+### Features
+
+* add new article IA ([a5b0d94](https://github.com/SocialGouv/ressourcerie/commit/a5b0d9479bcf6cb10f6edb3375de672bd50d56ef))
+
 ## [1.1.1](https://github.com/SocialGouv/ressourcerie/compare/v1.1.0...v1.1.1) (2022-03-16)
 
 
