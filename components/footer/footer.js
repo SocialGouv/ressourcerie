@@ -93,6 +93,11 @@ const Footer = () => {
                 Nous contacter
               </a>
             </li>
+            <li className="fr-footer__bottom-item">
+              <a className="fr-footer__bottom-link" href="/stats/">
+                Statistiques
+              </a>
+            </li>
             
           </ul>
         </div>
