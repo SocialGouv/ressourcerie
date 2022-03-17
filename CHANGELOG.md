@@ -1,3 +1,10 @@
+## [1.5.1](https://github.com/SocialGouv/ressourcerie/compare/v1.5.0...v1.5.1) (2022-03-17)
+
+
+### Bug Fixes
+
+* fix keywords on ressources ([0df02e8](https://github.com/SocialGouv/ressourcerie/commit/0df02e876d39e7b721fa398a5cb3ee98d4a27873))
+
 # [1.5.0](https://github.com/SocialGouv/ressourcerie/compare/v1.4.1...v1.5.0) (2022-03-17)
 
 
