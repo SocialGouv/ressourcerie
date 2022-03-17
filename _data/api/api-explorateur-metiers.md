@@ -9,13 +9,8 @@ external_site: https://pole-emploi.io/data/api/explorateur-metiers-version-beta
 partners:
   - Pôle emploi
 keywords:
-  - Travail
-  - Emploi
-  - Marché du travail
-  - Compétences
-  - ROME
-  - AFPA
-  - Mobilité professionnelle
+  - Métier
+  - Compétence
 contact_link: support@pole-emploi.io
 doc_tech_external: https://pole-emploi.io/data/api/explorateur-metiers-version-beta?tabgroup-api=documentation&doc-section=api-doc-section-rechercher-un-m%C3%A9tier-ou-une-comp%C3%A9tence
 themes:
