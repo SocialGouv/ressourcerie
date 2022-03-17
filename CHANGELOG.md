@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/SocialGouv/ressourcerie/compare/v1.4.0...v1.4.1) (2022-03-17)
+
+
+### Bug Fixes
+
+* remove datagouv_uids ([7006abc](https://github.com/SocialGouv/ressourcerie/commit/7006abcedf0b063813cdf04c68c0447859a6e2d5))
+
 # [1.4.0](https://github.com/SocialGouv/ressourcerie/compare/v1.3.2...v1.4.0) (2022-03-17)
 
 
