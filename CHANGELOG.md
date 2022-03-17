@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/SocialGouv/ressourcerie/compare/v1.3.2...v1.4.0) (2022-03-17)
+
+
+### Features
+
+* add new ressources ([4363305](https://github.com/SocialGouv/ressourcerie/commit/4363305fa6d594c7806482184ed680d9bb7e70b6))
+
 ## [1.3.2](https://github.com/SocialGouv/ressourcerie/compare/v1.3.1...v1.3.2) (2022-03-16)
 
 
