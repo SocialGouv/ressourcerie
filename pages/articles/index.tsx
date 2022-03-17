@@ -28,7 +28,7 @@ const Guides: NextPage<Props> = ({ guidesForAnAPI, generalGuides }) => {
         <h1>Comprendre les ressources de la sphère travail</h1>
       </section>
       <section className="fr-container sub-section">
-        <h2>Comment fonctionnent les différents types de ressources ?</h2>
+        <h2>Culture données et numérique</h2>
         <div className="default-grid">
           {generalGuides.map(guide => (
             <GuideLink key={guide.title} guide={guide} />
@@ -36,7 +36,7 @@ const Guides: NextPage<Props> = ({ guidesForAnAPI, generalGuides }) => {
         </div>
       </section>
       <section className="fr-container sub-section">
-        <h2>Comment s’utilisent les ressources ?</h2>
+        <h2>Zoom sur les projets et la communauté</h2>
         <div className="default-grid">
           {guidesForAnAPI.map(guide => (
             <GuideLink key={guide.title} guide={guide} />
