@@ -10,12 +10,6 @@ partners:
   - Pôle emploi
 keywords:
   - Formation
-  - Emploi
-  - Marché du travail
-  - Formation professionnelle
-  - Notation
-  - Avis
-  - Stagiaires
 contact_link: support@pole-emploi.io
 doc_tech_external: https://pole-emploi.io/data/api/anotea
 themes:

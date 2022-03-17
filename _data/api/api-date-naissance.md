@@ -9,13 +9,7 @@ external_site: https://pole-emploi.io/data/api/pole-emploi-connect/date-naissanc
 partners:
   - Pôle emploi
 keywords:
-  - Travail
-  - Emploi
-  - Marché du travail
-  - Compétences
-  - ROME
-  - AFPA
-  - Mobilité professionnelle
+  - Âge
 contact_link: support@pole-emploi.io
 doc_tech_external: https://pole-emploi.io/data/api/pole-emploi-connect/date-naissance?tabgroup-api=documentation&doc-section=api-doc-section-caracteristiques
 themes:

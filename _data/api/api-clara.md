@@ -9,13 +9,9 @@ external_site: https://pole-emploi.io/data/api
 partners:
   - Pôle emploi
 keywords:
-  - Travail
   - Emploi
-  - Marché du travail
   - Aide
   - Retour à l'emploi
-  - Alternance
-  - Financement
 contact_link: support@pole-emploi.io
 doc_tech_external: https://pole-emploi.io/data/api/clara
 themes:

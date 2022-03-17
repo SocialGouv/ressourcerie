@@ -9,12 +9,7 @@ external_site: https://pole-emploi.io/data/api
 partners:
   - Pôle emploi
 keywords:
-  - Travail
-  - Emploi
-  - Agences
-  - Point relais
-  - Horaires
-  - Adresse
+  - Agence
 contact_link: support@pole-emploi.io
 doc_tech_external: https://pole-emploi.io/data/api/referentiel-agences
 themes:

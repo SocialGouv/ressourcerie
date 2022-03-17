@@ -9,13 +9,8 @@ external_site: https://pole-emploi.io/data/api/retour-emploi-suite-formation?tab
 partners:
   - Pôle emploi
 keywords:
-  - Travail
-  - Emploi
-  - Marché du travail
-  - Compétences
-  - ROME
-  - AFPA
-  - Mobilité professionnelle
+  - Retour à l'emploi
+  - Formation
 contact_link: support@pole-emploi.io
 doc_tech_external: https://pole-emploi.io/data/api/retour-emploi-suite-formation?tabgroup-api=documentation&doc-section=api-doc-section-caracteristiques
 themes:
