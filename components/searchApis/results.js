@@ -5,7 +5,7 @@ const Results = ({ apiList }) => {
     <section id="api-results" className="page-body-container">
       <div className="fr-container">
         <div className="results-counter ">
-          {apiList.length} résultat{apiList.length > 1 && 's'}
+          {apiList.length} résultat{apiList.length > 1 && 's'} trouvé(s) sur la ressourcerie
         </div>
         <div className="default-grid">
           {apiList.length > 0 ? (

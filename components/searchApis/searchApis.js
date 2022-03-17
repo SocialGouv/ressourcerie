@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react';
 import { debounce } from 'lodash';
+import { uniq, flatten } from 'lodash';
 
 import FilterHeader from './filterHeader';
 import Results from './results';
+import ResultsDataGouv from './resultsDataGouv';
 import {
   API_ACCESS_TYPE,
   filterTheme,
@@ -44,6 +46,8 @@ const SearchApis = ({ allApis, allThemes, allKinds, allProducers }) => {
   const [theme, setTheme] = useState(null);
   const [APIType, setAPIType] = useState(null);
   const [searchTerms, setSearchTerms] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
+  const [results, setResults] = useState([]);
 
   const allProducersOptions = allProducers.map((el, index) => {
     return { value: index, label: el };
@@ -87,6 +91,20 @@ const SearchApis = ({ allApis, allThemes, allKinds, allProducers }) => {
 
     setApiList(newApiList);
 
+    console.log('test test')
+
+    if(searchTerms && searchTerms !== '') {
+      setIsLoading(true);
+
+      Promise.all([
+        fetch('https://www.data.gouv.fr/api/1/datasets/?q=' + searchTerms + '&organization=534fff96a3a7292c64a77ff4&page_size=20&page=1').then(resp => resp.json()),
+        fetch('https://www.data.gouv.fr/api/1/datasets/?q=' + searchTerms + '&organization=534fffa3a3a7292c64a78094&page_size=20&page=1').then(resp => resp.json()),
+        fetch('https://www.data.gouv.fr/api/1/datasets/?q=' + searchTerms + '&organization=57fe2a35c751df21e179df72&page_size=20&page=1').then(resp => resp.json()),
+      ]).then(data => {
+        setResults(uniq(flatten(data.map(res => res.data))))
+        setIsLoading(false);
+      })
+    }
     return () => {};
   }, [kind, theme, producer, APIType, searchTerms, allApis]);
 
@@ -170,6 +188,9 @@ const SearchApis = ({ allApis, allThemes, allKinds, allProducers }) => {
         search={setSearchTerms}
       />
       <Results apiList={apiList} />
+      
+        <ResultsDataGouv results={results} />
+      
     </>
   );
 };

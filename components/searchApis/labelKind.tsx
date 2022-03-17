@@ -12,7 +12,7 @@ const LabelKind: React.FC<IProps> = ({
   return (
     <>
         {kind.map(kind => (
-            <div key = {kind} className={kind.toLowerCase().replace(' ', '-')}>{kind}</div>
+            <div key = {kind} className={kind?.toLowerCase().replace(' ', '-')}>{kind?.toUpperCase()}</div>
         ))}
         <style jsx>{`
         .uptime-stat {

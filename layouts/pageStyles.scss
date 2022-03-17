@@ -42,6 +42,11 @@ html {
     background: $lightGrey;
   }
 
+  section.page-body-container-datagouv {
+    padding: 35px 0 60px;
+    background: $lightestGrey;
+  }
+
   .default-grid {
     display: grid;
     grid-template-columns: 31% 31% 31%;
