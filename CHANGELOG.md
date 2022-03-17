@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/SocialGouv/ressourcerie/compare/v1.4.1...v1.5.0) (2022-03-17)
+
+
+### Features
+
+* add search data.gouv.fr ([bbcbef7](https://github.com/SocialGouv/ressourcerie/commit/bbcbef7e4f1d396a2f681cc646b3e8cd3403fa49))
+
 ## [1.4.1](https://github.com/SocialGouv/ressourcerie/compare/v1.4.0...v1.4.1) (2022-03-17)
 
 
