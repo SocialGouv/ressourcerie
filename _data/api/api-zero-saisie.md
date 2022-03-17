@@ -18,8 +18,6 @@ keywords:
   - Mobilité professionnelle
 contact_link: support@pole-emploi.io
 doc_tech_external: https://pole-emploi.io/data/api/zero-saisie-test?tabgroup-api=documentation&doc-section=api-doc-section-caracteristiques
-datagouv_uuid:
-  - 58da857388ee384902e505f5
 themes:
   - Emploi
 kind:
