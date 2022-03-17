@@ -1,9 +1,9 @@
 ---
-title: API Répertoire Opérationnel des Métiers et des Emplois
+title: API Répertoire Opérationnel des Métiers et des Emplois (ROME)
 tagline: Accéder à l'ensemble des informations sur les métiers
 producer: pole-emploi
 category: Public
-is_open: 0 # -1 means API not open
+is_open: 1 # -1 means API not open
 account_link: https://pole-emploi.io/inscription
 external_site: https://pole-emploi.io/data/api
 partners:
@@ -24,6 +24,7 @@ themes:
   - Emploi
 kind:
   - API
+from: pole-emploi
 visits_2019: 1000
 last_update: 02/08/2021
 ---
