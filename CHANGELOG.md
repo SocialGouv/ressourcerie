@@ -1,3 +1,10 @@
+## [1.6.3](https://github.com/SocialGouv/ressourcerie/compare/v1.6.2...v1.6.3) (2022-03-18)
+
+
+### Bug Fixes
+
+* correct site name ([e41e3ab](https://github.com/SocialGouv/ressourcerie/commit/e41e3abc54556f010473db3c8c878fb936137d2c))
+
 ## [1.6.2](https://github.com/SocialGouv/ressourcerie/compare/v1.6.1...v1.6.2) (2022-03-18)
 
 
