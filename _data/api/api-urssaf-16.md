@@ -22,20 +22,4 @@ last_update: 02/08/2021
 
 ### A quoi sert l'API ?
 
-Séries mensuelles des taux d'impayés (restes à recouvrer : RAR) des entreprises privées de 10 salariés ou plus hors taxations d'office (publiées dans le Baromètre économique).
-
-MISE A JOUR : fin de mois + ~20 jours.
-
-Les données sont corrigées des variations saisonnières.
-
-Champ : régime général, entreprises du secteur privé de 10 salariés ou plus ; régions métropolitaines.
-Profondeur : depuis janvier 2004.
-
-Source : Urssaf
-
-Le taux d’impayés est calculé comme le rapport entre les cotisations restant à recouvrer (somme des cotisations dues par les entreprises – sommes des cotisations effectivement recouvrées par les Urssaf) et le montant des cotisations dues. Il est calculé hors taxations d’office (taxation provisoire forfaitaire en cas de non transmission de la déclaration dans les délais prescrits).
-
-Le taux d’impayés « fin de mois » est calculé comme le rapport entre le montant des cotisations restant à recouvrer exigibles au mois M, vue à la fin du mois M et le montant des cotisations dues exigibles au mois M, vues également à la fin du mois M. Cet indicateur, disponible très tôt, permet d'obtenir une information précoce sur le recouvrement.
-
-Néanmoins, un reliquat d’anomalies dans les déclarations subsiste en fin de mois, ce qui conduit à de légères fluctuations additionnelles. 
-Les taux d’impayés « à échéance + 30 jours » et « 90 jours » sont calculés de manière analogue, mais avec des reculs respectifs de 30 et 90 jours après l’échéance. Leurs séries sont donc plus lisses.
+<p>Données annuelles sur les revenus des travailleurs indépendants entre 2004 et 2020, par secteur et par type de travailleur indépendant.</p><p><u>Source</u> : Urssaf<br/><br/><u>Précisions méthodologiques</u> :</p><ul><li>Ces données n’intègrent pas les exploitants agricoles, lesquels sont suivis par la Caisse centrale de la Mutualité sociale agricole (CCMSA). Par ailleurs, elles concernent l’ensemble des travailleurs indépendants relevant de la protection sociale des indépendants, ce qui exclut les indépendants qui ne sont pas des travailleurs non-salariés au sens de la protection sociale : dirigeants de certaines sociétés (SA, SAS/SASU), mandataires sociaux ou gérants minoritaires de SARL, et qui sont considérés comme assimilés salariés (rattachés au régime général par l’article L311-3 du CSS).<br/></li><li>Pour l’exercice professionnel de son activité économique, le travailleur indépendant (TI) peut opter pour le statut dit « classique » ou celui d’auto-entrepreneur (AE). Ce choix conditionne le mode de déclaration et de calcul de cotisations. A l’intérieur des deux statuts, plusieurs catégories sont identifiées, au sens de la sécurité sociale : les artisans, les commerçants, les professions libérales.</li><li>Le revenu des AE est calculé à partir du chiffre d'affaires déclaré. Le passage du chiffre d’affaires au revenu s’obtient en appliquant au chiffre d’affaires annuel un abattement forfaitaire défini en fonction du type d’activité (34% pour les BNC, 50 % pour les BIC prestations, 71 % pour les BIC achat/vente). Le nombre d'AE correspond aux AE économiquement actifs, c'est à dire ceux ayant déclaré un chiffre d'affaires strictement positif dans l'année.<br/></li><li>A la différence de l’AE, le TI classique déclare annuellement son revenu dans la déclaration sociale des indépendants (DSI). Il cotise sur ce revenu annuel, généralement le résultat comptable de l’exercice, assez proche du revenu fiscal. En cas d’absence de déclaration, un revenu appelé « taxation d’office », fonction d’un revenu antérieur connu ou du plafond de sécurité sociale (PASS) en vigueur majoré, est retenu pour le calcul des cotisations. </li><li>Le nombre de travailleurs indépendants comptabilise des comptes de \ncotisants et non des individus. Il porte sur les seuls travailleurs \nindépendants ayant dégagé un revenu.</li><li>Les TI taxés d'office ne sont pas ici pris en compte, tant au niveau du nombre de TI que du montant des revenus.<br/><br/></li></ul>

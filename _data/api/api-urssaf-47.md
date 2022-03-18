@@ -22,20 +22,4 @@ last_update: 02/08/2021
 
 ### A quoi sert l'API ?
 
-Séries mensuelles des taux d'impayés (restes à recouvrer : RAR) des entreprises privées de 10 salariés ou plus hors taxations d'office (publiées dans le Baromètre économique).
-
-MISE A JOUR : fin de mois + ~20 jours.
-
-Les données sont corrigées des variations saisonnières.
-
-Champ : régime général, entreprises du secteur privé de 10 salariés ou plus ; régions métropolitaines.
-Profondeur : depuis janvier 2004.
-
-Source : Urssaf
-
-Le taux d’impayés est calculé comme le rapport entre les cotisations restant à recouvrer (somme des cotisations dues par les entreprises – sommes des cotisations effectivement recouvrées par les Urssaf) et le montant des cotisations dues. Il est calculé hors taxations d’office (taxation provisoire forfaitaire en cas de non transmission de la déclaration dans les délais prescrits).
-
-Le taux d’impayés « fin de mois » est calculé comme le rapport entre le montant des cotisations restant à recouvrer exigibles au mois M, vue à la fin du mois M et le montant des cotisations dues exigibles au mois M, vues également à la fin du mois M. Cet indicateur, disponible très tôt, permet d'obtenir une information précoce sur le recouvrement.
-
-Néanmoins, un reliquat d’anomalies dans les déclarations subsiste en fin de mois, ce qui conduit à de légères fluctuations additionnelles. 
-Les taux d’impayés « à échéance + 30 jours » et « 90 jours » sont calculés de manière analogue, mais avec des reculs respectifs de 30 et 90 jours après l’échéance. Leurs séries sont donc plus lisses.
+<p>Données par département et système déclaratif de l’indemnisation exceptionnelle de l'activité partielle des salariés des particuliers employeurs.</p><p>Dans le cadre de la crise sanitaire Covid-19, les pouvoirs publics ont mis en place, pour les mois de mars à août 2020 (septembre en Guyane et à Mayotte), une mesure d’indemnisation \nexceptionnelle pour soutenir les salariés des particuliers employeurs. \nLes salariés ont pu bénéficier pour les \nheures prévues et non réalisées d'une indemnisation correspondant à au moins 80% \ndu salaire net des heures non effectuées, les employeurs étant remboursés par l'Urssaf à hauteur de 80% de ce salaire net.</p><p>Le dispositif a été reconduit en novembre 2020 avec une indemnisation versée au salarié toujours supérieure ou égale à 80% du salaire net des heures non effectuées et un remboursement à l'employeur égal à 65% de ce salaire.</p><p>Les données fournissent :<br/>- le nombre d'employeurs ayant versé une indemnisation,<br/>- le nombre de salariés indemnisés,<br/>- le nombre d'heures indemnisées,<br/>- le salaire net (\"théorique\") associé aux heures indemnisées,<br/>- le montant de l'indemnisation versée aux salariés estimé sur la base d'une indemnité égale à 80% du salaire net des heures indemnisées (hors éventuel complément de l'employeur),<br/>- le montant remboursé par l'Urssaf aux employeurs.<br/></p><p><span style=\"font-family: inherit;\"><u>Champ</u> : Données sur les particuliers employeurs  issues des dispositifs Cesu et </span>Paje.</p><p><span style=\"font-family: inherit;\"><u>Profondeur</u> : Données portant sur la période mars 2020-mars 2021. Situation arrêtée au 30/04/2021.</span><br/></p><p><span style=\"font-family: inherit;\"><u>Sources</u> : Acoss-Urssaf, CnCesu </span>et Centre Pajemploi.</p><p><br/></p>

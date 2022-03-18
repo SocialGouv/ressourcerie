@@ -22,20 +22,4 @@ last_update: 02/08/2021
 
 ### A quoi sert l'API ?
 
-Séries mensuelles des taux d'impayés (restes à recouvrer : RAR) des entreprises privées de 10 salariés ou plus hors taxations d'office (publiées dans le Baromètre économique).
-
-MISE A JOUR : fin de mois + ~20 jours.
-
-Les données sont corrigées des variations saisonnières.
-
-Champ : régime général, entreprises du secteur privé de 10 salariés ou plus ; régions métropolitaines.
-Profondeur : depuis janvier 2004.
-
-Source : Urssaf
-
-Le taux d’impayés est calculé comme le rapport entre les cotisations restant à recouvrer (somme des cotisations dues par les entreprises – sommes des cotisations effectivement recouvrées par les Urssaf) et le montant des cotisations dues. Il est calculé hors taxations d’office (taxation provisoire forfaitaire en cas de non transmission de la déclaration dans les délais prescrits).
-
-Le taux d’impayés « fin de mois » est calculé comme le rapport entre le montant des cotisations restant à recouvrer exigibles au mois M, vue à la fin du mois M et le montant des cotisations dues exigibles au mois M, vues également à la fin du mois M. Cet indicateur, disponible très tôt, permet d'obtenir une information précoce sur le recouvrement.
-
-Néanmoins, un reliquat d’anomalies dans les déclarations subsiste en fin de mois, ce qui conduit à de légères fluctuations additionnelles. 
-Les taux d’impayés « à échéance + 30 jours » et « 90 jours » sont calculés de manière analogue, mais avec des reculs respectifs de 30 et 90 jours après l’échéance. Leurs séries sont donc plus lisses.
+<p style='font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif;'>Série trimestrielle des déclarations préalables à l'embauche (DPAE) au niveau France entière ventilées par secteur d'activité au niveau agrégé en 38 postes de la NAF (publiée dans l'<a href=\"https://www.acoss.fr/home/observatoire-economique/publications/acoss-stat.html\" target=\"_blank\"><b>Acoss Stat</b></a>). <span style=\"font-family: Arial, sans-serif; font-size: 11pt;\">►</span><b><u><a href=\"https://open.urssaf.fr/explore/dataset/planning-de-mise-a-jour/table/?sort=date_de_mise_a_jour\" target=\"_blank\">MISE A JOUR</a></u> : fin de trim. + ~20 jours.</b></p>\n<p><b>La série des DPAE de plus d'un mois tous secteurs est labellisée par l'Autorité de la statistique publique (avis du 14/04/2020 - JORF n°0095 du 18/04/2020).</b></p>\n<p style='font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif;'>La série est par trimestre d'embauche.</p><p style='font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif;'>Les données sont corrigées des variations saisonnières et des jours ouvrables<span>.</span></p><p><u style=\"font-family: inherit;\">Champ</u><span style=\"font-family: inherit;\"> : régime général, hors intérim.</span><br/></p>\n<p><u>Profondeur</u> : depuis 2000.</p><p style='font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif;'><u>Source</u> : Urssaf</p><p style='font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif;'><b>DATAVIZ</b> : <a href=\"https://open.urssaf.fr/explore/dataset/dpae-france-entiere-x-na38/dataviz/\">mise en perspective</a></p><p style='font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif;'><br/></p>

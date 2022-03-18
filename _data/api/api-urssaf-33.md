@@ -22,20 +22,4 @@ last_update: 02/08/2021
 
 ### A quoi sert l'API ?
 
-Séries mensuelles des taux d'impayés (restes à recouvrer : RAR) des entreprises privées de 10 salariés ou plus hors taxations d'office (publiées dans le Baromètre économique).
-
-MISE A JOUR : fin de mois + ~20 jours.
-
-Les données sont corrigées des variations saisonnières.
-
-Champ : régime général, entreprises du secteur privé de 10 salariés ou plus ; régions métropolitaines.
-Profondeur : depuis janvier 2004.
-
-Source : Urssaf
-
-Le taux d’impayés est calculé comme le rapport entre les cotisations restant à recouvrer (somme des cotisations dues par les entreprises – sommes des cotisations effectivement recouvrées par les Urssaf) et le montant des cotisations dues. Il est calculé hors taxations d’office (taxation provisoire forfaitaire en cas de non transmission de la déclaration dans les délais prescrits).
-
-Le taux d’impayés « fin de mois » est calculé comme le rapport entre le montant des cotisations restant à recouvrer exigibles au mois M, vue à la fin du mois M et le montant des cotisations dues exigibles au mois M, vues également à la fin du mois M. Cet indicateur, disponible très tôt, permet d'obtenir une information précoce sur le recouvrement.
-
-Néanmoins, un reliquat d’anomalies dans les déclarations subsiste en fin de mois, ce qui conduit à de légères fluctuations additionnelles. 
-Les taux d’impayés « à échéance + 30 jours » et « 90 jours » sont calculés de manière analogue, mais avec des reculs respectifs de 30 et 90 jours après l’échéance. Leurs séries sont donc plus lisses.
+<p>Une convention d’objectifs et de gestion, signée avec les ministères de Tutelle, détermine les objectifs pluriannuels du réseau des Urssaf et les moyens qui lui sont accordés pour mettre en œuvre les actions définies.<br/><br/>Le texte et plus de détail via le lien ci-contre : <br/><a href=\"https://www.acoss.fr/home/lacoss-et-les-urssaf/documents-de-reference/cog-2018-2022.html\" target=\"_blank\">https://www.acoss.fr/home/lacoss-et-les-urssaf/documents-de-reference/cog-2018-2022.html</a><br/><br/>Le présent fichier recense les résultats des indicateurs prévus dans cette convention.<br/></p><p>Date de création : 15 avril 2021</p><p>Date de mise à jour : 02 décembre 2021</p>

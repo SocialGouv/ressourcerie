@@ -22,20 +22,4 @@ last_update: 02/08/2021
 
 ### A quoi sert l'API ?
 
-Séries mensuelles des taux d'impayés (restes à recouvrer : RAR) des entreprises privées de 10 salariés ou plus hors taxations d'office (publiées dans le Baromètre économique).
-
-MISE A JOUR : fin de mois + ~20 jours.
-
-Les données sont corrigées des variations saisonnières.
-
-Champ : régime général, entreprises du secteur privé de 10 salariés ou plus ; régions métropolitaines.
-Profondeur : depuis janvier 2004.
-
-Source : Urssaf
-
-Le taux d’impayés est calculé comme le rapport entre les cotisations restant à recouvrer (somme des cotisations dues par les entreprises – sommes des cotisations effectivement recouvrées par les Urssaf) et le montant des cotisations dues. Il est calculé hors taxations d’office (taxation provisoire forfaitaire en cas de non transmission de la déclaration dans les délais prescrits).
-
-Le taux d’impayés « fin de mois » est calculé comme le rapport entre le montant des cotisations restant à recouvrer exigibles au mois M, vue à la fin du mois M et le montant des cotisations dues exigibles au mois M, vues également à la fin du mois M. Cet indicateur, disponible très tôt, permet d'obtenir une information précoce sur le recouvrement.
-
-Néanmoins, un reliquat d’anomalies dans les déclarations subsiste en fin de mois, ce qui conduit à de légères fluctuations additionnelles. 
-Les taux d’impayés « à échéance + 30 jours » et « 90 jours » sont calculés de manière analogue, mais avec des reculs respectifs de 30 et 90 jours après l’échéance. Leurs séries sont donc plus lisses.
+<p>Données par département et secteur d'activité relatives à l'aide créée par le Conseil de la protection sociale des travailleurs indépendants (CPSTI) en faveur des\nartisans/commerçants et leurs conjoints collaborateurs relevant du Régime Complémentaire des Indépendants (RCI) dans le cadre de la crise du Covid-19.</p><p><b>Les données retracent les montants effectivement versées en date du 16 juillet 2020</b>. Elles sont susceptibles d'être ajustées à la hausse dans une prochaine mise à jour.</p>\n<p>Cette aide, versée à compter du 27 avril s'adresse à tous\nles artisans/commerçants et leurs conjoints collaborateurs :</p>\n<ul><li><o:p></o:p>relevant du Régime Complémentaire des Indépendants (RCI);</li><li><o:p></o:p>en activité au 15 mars 2020;</li><li><o:p></o:p>immatriculés avant le 1er janvier 2019.</li></ul>\n<p>Elle est cumulable avec les aides du Fonds de Solidarité mises en place par le gouvernement. D'un montant maximal de 1250 € nets d’impôts et de charges sociales, elle est plafonnée à hauteur des versements effectués sur la cotisation RCI 2018.</p>\n<p><u>Source</u> : Acoss-Urssaf</p>\n<p><br/></p>

@@ -22,20 +22,4 @@ last_update: 02/08/2021
 
 ### A quoi sert l'API ?
 
-Séries mensuelles des taux d'impayés (restes à recouvrer : RAR) des entreprises privées de 10 salariés ou plus hors taxations d'office (publiées dans le Baromètre économique).
-
-MISE A JOUR : fin de mois + ~20 jours.
-
-Les données sont corrigées des variations saisonnières.
-
-Champ : régime général, entreprises du secteur privé de 10 salariés ou plus ; régions métropolitaines.
-Profondeur : depuis janvier 2004.
-
-Source : Urssaf
-
-Le taux d’impayés est calculé comme le rapport entre les cotisations restant à recouvrer (somme des cotisations dues par les entreprises – sommes des cotisations effectivement recouvrées par les Urssaf) et le montant des cotisations dues. Il est calculé hors taxations d’office (taxation provisoire forfaitaire en cas de non transmission de la déclaration dans les délais prescrits).
-
-Le taux d’impayés « fin de mois » est calculé comme le rapport entre le montant des cotisations restant à recouvrer exigibles au mois M, vue à la fin du mois M et le montant des cotisations dues exigibles au mois M, vues également à la fin du mois M. Cet indicateur, disponible très tôt, permet d'obtenir une information précoce sur le recouvrement.
-
-Néanmoins, un reliquat d’anomalies dans les déclarations subsiste en fin de mois, ce qui conduit à de légères fluctuations additionnelles. 
-Les taux d’impayés « à échéance + 30 jours » et « 90 jours » sont calculés de manière analogue, mais avec des reculs respectifs de 30 et 90 jours après l’échéance. Leurs séries sont donc plus lisses.
+<p>Séries trimestrielles sur les particuliers employeurs issues des dispositifs Cesu, Pajemploi et DNS (publiées<span> dans l'</span><a href=\"https://www.acoss.fr/home/observatoire-economique/publications/acoss-stat.html\" style='background-color: rgb(255, 255, 255); font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif; font-weight: 400;' target=\"_blank\"><span style=\"font-weight: bolder;\">Acoss Stat</span></a><span style=\"font-size: 12.495px;\">)</span><span>.</span><span> </span><span style=\"font-family: Arial, sans-serif;\">►</span><u style=\"font-weight: bolder;\"><a href=\"https://open.urssaf.fr/explore/dataset/planning-de-mise-a-jour/table/?sort=date_de_mise_a_jour\" target=\"_blank\">MISE A JOUR</a></u><span style=\"font-weight: bolder;\"> : fin de trimestre+ ~110 jours.</span></p><p><u>Source</u> : Urssaf, CnCesu, Centre Pajemploi</p><p><u>Profondeur</u> : depuis 2004.</p><p>Les données sont ventilées par catégorie d'emploi (type d'emploi x dispositif déclaratif) :<br/>- CESU<br/>- DNS_AM (Assistantes maternelles - DNS)<br/>- DNS_GED (Garde d'enfant - DNS)<br/>- DNS_HGED (Hors garde d'enfant - DNS)<br/>- PAJE_GED (Garde d'enfant à domicile - PAJE)<br/>- PAJE_AM (Assistantes maternelles - PAJE)</p><p>Elles sont par ailleurs déclinées par région.</p><p>Méthodologie :<br/></p><ul><li>Les données déclarées par le CESU ne permettent pas d'identifier le type d'activité exercé par le salarié. Elles sont ainsi classées ici dans le type d'emploi \"Hors garde d'enfant\" même si le CESU peut être utilisé pour la garde d'enfants notamment de plus de 6 ans (le dispositif Paje étant privilégié pour les enfants plus jeunes).</li><li>la modalité \"_calage_\" permet d'assurer la cohérence des séries corrigées des variations saisonnières (CVS) pour chacun des croisements. En effet, les CVS des différentes strates étant estimées séparément, la somme des CVS n'est pas forcément égale à la CVS de la somme.<br/></li></ul><p><br/></p>
