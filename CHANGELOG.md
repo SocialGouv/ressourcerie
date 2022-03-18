@@ -1,3 +1,10 @@
+## [1.6.2](https://github.com/SocialGouv/ressourcerie/compare/v1.6.1...v1.6.2) (2022-03-18)
+
+
+### Bug Fixes
+
+* update description for ressources urrsaf ([5a1143b](https://github.com/SocialGouv/ressourcerie/commit/5a1143b3666e8c56c970ce460a3a1b56ef46aca1))
+
 ## [1.6.1](https://github.com/SocialGouv/ressourcerie/compare/v1.6.0...v1.6.1) (2022-03-18)
 
 
