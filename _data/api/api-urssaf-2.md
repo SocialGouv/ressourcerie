@@ -5,12 +5,12 @@ producer: urssaf
 category: Public
 is_open: 1 # -1 means API not open
 account_link: https://pole-emploi.io/inscription
-external_site: https://open.urssaf.fr/explore/dataset/taux-rar-horsto-mensuels-entreprises-de-10-salaries-ou-plus-par-ancienne-region/api/
+external_site: https://open.urssaf.fr/explore/dataset/nombre-detablissements-employeurs-et-effectifs-salaries-du-secteur-prive-france-/api/
 partners:
   - urssaf
 keywords:
   - Urssaf
-doc_tech_external: https://open.urssaf.fr/explore/dataset/taux-rar-horsto-mensuels-entreprises-de-10-salaries-ou-plus-par-ancienne-region/api/
+doc_tech_external: https://open.urssaf.fr/explore/dataset/nombre-detablissements-employeurs-et-effectifs-salaries-du-secteur-prive-france-/api/
 themes:
   - Emploi
 kind:
