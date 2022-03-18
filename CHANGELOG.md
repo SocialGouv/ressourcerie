@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/SocialGouv/ressourcerie/compare/v1.5.1...v1.6.0) (2022-03-18)
+
+
+### Features
+
+* add ressources urssaf ([f98fea0](https://github.com/SocialGouv/ressourcerie/commit/f98fea0ab4c351697657edc12f5bb087ffa04c6a))
+
 ## [1.5.1](https://github.com/SocialGouv/ressourcerie/compare/v1.5.0...v1.5.1) (2022-03-17)
 
 
