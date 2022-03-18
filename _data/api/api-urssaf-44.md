@@ -22,20 +22,4 @@ last_update: 02/08/2021
 
 ### A quoi sert l'API ?
 
-Séries mensuelles des taux d'impayés (restes à recouvrer : RAR) des entreprises privées de 10 salariés ou plus hors taxations d'office (publiées dans le Baromètre économique).
-
-MISE A JOUR : fin de mois + ~20 jours.
-
-Les données sont corrigées des variations saisonnières.
-
-Champ : régime général, entreprises du secteur privé de 10 salariés ou plus ; régions métropolitaines.
-Profondeur : depuis janvier 2004.
-
-Source : Urssaf
-
-Le taux d’impayés est calculé comme le rapport entre les cotisations restant à recouvrer (somme des cotisations dues par les entreprises – sommes des cotisations effectivement recouvrées par les Urssaf) et le montant des cotisations dues. Il est calculé hors taxations d’office (taxation provisoire forfaitaire en cas de non transmission de la déclaration dans les délais prescrits).
-
-Le taux d’impayés « fin de mois » est calculé comme le rapport entre le montant des cotisations restant à recouvrer exigibles au mois M, vue à la fin du mois M et le montant des cotisations dues exigibles au mois M, vues également à la fin du mois M. Cet indicateur, disponible très tôt, permet d'obtenir une information précoce sur le recouvrement.
-
-Néanmoins, un reliquat d’anomalies dans les déclarations subsiste en fin de mois, ce qui conduit à de légères fluctuations additionnelles. 
-Les taux d’impayés « à échéance + 30 jours » et « 90 jours » sont calculés de manière analogue, mais avec des reculs respectifs de 30 et 90 jours après l’échéance. Leurs séries sont donc plus lisses.
+<p>Données sur les particuliers employeurs en 2019 issues des dispositifs Cesu et Pajemploi.</p><p></p><p>Année 2019.</p><p style='font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif; font-size: 12.495px;'><u>Source</u> : Acoss-Urssaf, CnCesu, Centre Pajemploi</p><p>Les données sont ventilées par catégorie d'emploi (type d'emploi x dispositif déclaratif) :<br/>- CESU_HGED (Hors garde d'enfant - CESU)<br/>- PAJE_GED (Garde d'enfant à domicile - PAJE)<br/>- PAJE_AM (Assistantes maternelles - PAJE)</p><p>Elles sont par ailleurs déclinées par département.</p><p><span style=\"font-weight: bolder;\">DATAVIZ</span> : <a href=\"https://open.urssaf.fr/pages/particuliers-employeurs-et-leurs-employes/\">les chiffres en image</a></p><p></p>

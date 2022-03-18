@@ -22,20 +22,4 @@ last_update: 02/08/2021
 
 ### A quoi sert l'API ?
 
-Séries mensuelles des taux d'impayés (restes à recouvrer : RAR) des entreprises privées de 10 salariés ou plus hors taxations d'office (publiées dans le Baromètre économique).
-
-MISE A JOUR : fin de mois + ~20 jours.
-
-Les données sont corrigées des variations saisonnières.
-
-Champ : régime général, entreprises du secteur privé de 10 salariés ou plus ; régions métropolitaines.
-Profondeur : depuis janvier 2004.
-
-Source : Urssaf
-
-Le taux d’impayés est calculé comme le rapport entre les cotisations restant à recouvrer (somme des cotisations dues par les entreprises – sommes des cotisations effectivement recouvrées par les Urssaf) et le montant des cotisations dues. Il est calculé hors taxations d’office (taxation provisoire forfaitaire en cas de non transmission de la déclaration dans les délais prescrits).
-
-Le taux d’impayés « fin de mois » est calculé comme le rapport entre le montant des cotisations restant à recouvrer exigibles au mois M, vue à la fin du mois M et le montant des cotisations dues exigibles au mois M, vues également à la fin du mois M. Cet indicateur, disponible très tôt, permet d'obtenir une information précoce sur le recouvrement.
-
-Néanmoins, un reliquat d’anomalies dans les déclarations subsiste en fin de mois, ce qui conduit à de légères fluctuations additionnelles. 
-Les taux d’impayés « à échéance + 30 jours » et « 90 jours » sont calculés de manière analogue, mais avec des reculs respectifs de 30 et 90 jours après l’échéance. Leurs séries sont donc plus lisses.
+<p style='font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif;'>Masse salariale et assiette chômage partiel mensuelles du secteur privé<span style=\"font-size: 12.495px;\"></span><span style=\"font-size: 0.833rem;\">, par région.</span><span style=\"font-size: 0.833rem;\"> </span><span style=\"font-family: Arial, sans-serif; font-size: 11pt;\">►</span><u style=\"font-family: inherit; font-size: 0.833rem; font-weight: bolder;\"><a href=\"https://open.urssaf.fr/explore/dataset/planning-de-mise-a-jour/table/?sort=date_de_mise_a_jour\" target=\"_blank\">MISE A JOUR</a></u><span style=\"font-family: inherit; font-size: 0.833rem; font-weight: bolder;\"> : fin mois + ~80 jours.</span></p><p style='font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif;'><span style=\"font-family: inherit; font-size: 0.833rem;\"><u>Champ</u> : secteur privé, régime général, France entière hors Mayotte.</span><br/></p><p style='font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif;'><u>Profondeur</u> : depuis janvier 2018. </p><p style='font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif;'><u>Source</u> : Urssaf<br/></p><p style='font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif;'><u>Précisions méthodologiques</u></p><p style='font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif;'>- la masse salariale correspond à l'assiette déplafonnée des cotisations sociales.</p><p style='font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif;'>-\n la part de l'assiette chômage partiel est égale au rapport entre \nl'assiette chômage partiel et la somme de l'assiette déplafonnée et de \nl'assiette chômage partiel.</p><p style='font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif;'><br/><br/></p>
