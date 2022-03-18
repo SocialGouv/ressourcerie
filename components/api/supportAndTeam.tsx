@@ -36,7 +36,7 @@ const SupportAndTeam: React.FC<IProps> = ({
             {link.indexOf('@') > -1 ? (
               <>
                 <ButtonLink
-                  href={`mailto:${link}?subject=Contact%20via%20ressourcerie.numericite.eu`}
+                  href={`mailto:${link}?subject=Contact%20via%20ressourcerie.fabrique.social.gouv.fr`}
                   alt
                 >
                   <span role="img" aria-label="émoji mail">

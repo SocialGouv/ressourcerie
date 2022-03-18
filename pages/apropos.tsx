@@ -10,8 +10,8 @@ const About: React.FC = () => (
   <Page
     headerKey={HEADER_PAGE.ABOUT}
     title="A propos"
-    description="Qu’est ce qu’une ressource du secteur public ? Quelle est la mission de ressourcerie.numericite.eu ? A qui s’adresse ce site ?"
-    canonical={`https://ressourcerie.numericite.eu/apropos`}
+    description="Qu’est ce qu’une ressource du secteur public ? Quelle est la mission de ressourcerie.fabrique.social.gouv.fr ? A qui s’adresse ce site ?"
+    canonical={`https://ressourcerie.fabrique.social.gouv.fr/apropos`}
   >
     <div className="text-wrapper text-style">
       <h1 className="layout-center">A propos de la ressourcerie</h1>

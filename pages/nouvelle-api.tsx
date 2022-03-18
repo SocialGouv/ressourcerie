@@ -11,7 +11,7 @@ const NewAPI = () => (
       <p className="layout-center">
         Vous êtes un ministère, une agence publique, une collectivité ?
         Complétez ce formulaire pour référencer une nouvelle ressource dans le
-        catalogue ressourcerie.numericite.eu
+        catalogue ressourcerie.fabrique.social.gouv.fr
       </p>
       <div>
         <h2>A lire avant de commencer</h2>
@@ -23,7 +23,7 @@ const NewAPI = () => (
           ressource.
         </p>
         <p>
-          Pour référencer sa ressource sur ressourcerie.numericite.eu, il faut préalablement avoir
+          Pour référencer sa ressource sur ressourcerie.fabrique.social.gouv.fr, il faut préalablement avoir
           développé et documentée la ressource. <br />
           Ensuite il faut se mettre à la place du futur lecteur. Sur la fiche
           ressource, le lecteur doit pouvoir trouver les informations suivantes :

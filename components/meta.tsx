@@ -21,8 +21,8 @@ const Meta: React.FC<IProps> = ({
 }) => {
   description = prune(description, 160, '…');
 
-  const SITE_NAME = 'ressourcerie.numericite.eu';
-  const SITE_URL = process.env.SITE_URL || 'https://ressourcerie.numericite.eu';
+  const SITE_NAME = 'ressourcerie.fabrique.social.gouv.fr';
+  const SITE_URL = process.env.SITE_URL || 'https://ressourcerie.fabrique.social.gouv.fr';
   const SITE_DESCRIPTION =
     'Simplifiez le partage et la circulation des données administratives';
 
@@ -42,7 +42,7 @@ const Meta: React.FC<IProps> = ({
               url: '/images/linkedin.jpg',
               width: 1200,
               height: 627,
-              alt: 'ressourcerie.numericite.eu',
+              alt: 'ressourcerie.fabrique.social.gouv.fr',
             },
           ],
           site_name: SITE_NAME,
