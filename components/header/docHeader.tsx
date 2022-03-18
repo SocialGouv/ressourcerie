@@ -33,7 +33,7 @@ const DocHeader = () => (
               <a
                 className="api-logo"
                 href="/"
-                title="Accueil - ressourcerie.numericite.eu - République Française"
+                title="Accueil - ressourcerie.fabrique.social.gouv.fr - République Française"
               >
                 {apiLogo}
               </a>

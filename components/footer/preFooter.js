@@ -13,7 +13,7 @@ const PreFooter = ({ background }) => (
       <div>
         <p>Vous ne trouvez pas la ressource dont vous avez besoin ?</p>
         <ButtonLink
-          href={`mailto:contact@numericite.eu?subject=Contact%20via%20ressourcerie.numericite.eu`}
+          href={`mailto:contact@numericite.eu?subject=Contact%20via%20ressourcerie.fabrique.social.gouv.fr`}
           onClick={() => logCTA('CTA pre-footer')}
         >
           Nous contacter
