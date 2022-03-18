@@ -1,3 +1,10 @@
+## [1.6.1](https://github.com/SocialGouv/ressourcerie/compare/v1.6.0...v1.6.1) (2022-03-18)
+
+
+### Bug Fixes
+
+* complete ressources urssaf ([a296f8c](https://github.com/SocialGouv/ressourcerie/commit/a296f8c03abc60b1cd047e57b9a09ecd4537f787))
+
 # [1.6.0](https://github.com/SocialGouv/ressourcerie/compare/v1.5.1...v1.6.0) (2022-03-18)
 
 
