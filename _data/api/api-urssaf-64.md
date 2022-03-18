@@ -5,12 +5,12 @@ producer: urssaf
 category: Public
 is_open: 1 # -1 means API not open
 account_link: https://pole-emploi.io/inscription
-external_site: https://open.urssaf.fr/explore/dataset/taux-rar-horsto-mensuels-entreprises-de-10-salaries-ou-plus-par-ancienne-region/api/
+external_site: https://open.urssaf.fr/explore/dataset/effectifs-salaries-et-masse-salariale-du-secteur-prive-france-entiere-x-na88/api/
 partners:
   - urssaf
 keywords:
   - urssaf
-doc_tech_external: https://open.urssaf.fr/explore/dataset/taux-rar-horsto-mensuels-entreprises-de-10-salaries-ou-plus-par-ancienne-region/api/
+doc_tech_external: https://open.urssaf.fr/explore/dataset/effectifs-salaries-et-masse-salariale-du-secteur-prive-france-entiere-x-na88/api/
 themes:
   - Emploi
 kind:
@@ -20,7 +20,7 @@ visits_2019: 1000
 last_update: 02/08/2021
 ---
 
-### A quoi sert l'API Séries mensuelles des taux d'impayés ?
+### A quoi sert l'API ?
 
 Séries mensuelles des taux d'impayés (restes à recouvrer : RAR) des entreprises privées de 10 salariés ou plus hors taxations d'office (publiées dans le Baromètre économique).
 
