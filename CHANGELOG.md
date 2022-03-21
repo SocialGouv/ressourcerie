@@ -1,3 +1,10 @@
+## [1.6.4](https://github.com/SocialGouv/ressourcerie/compare/v1.6.3...v1.6.4) (2022-03-21)
+
+
+### Bug Fixes
+
+* remove miniature, adapt 'a propos' ([c0f1e74](https://github.com/SocialGouv/ressourcerie/commit/c0f1e745939e983ccf0489d0030e805615d1457a))
+
 ## [1.6.3](https://github.com/SocialGouv/ressourcerie/compare/v1.6.2...v1.6.3) (2022-03-18)
 
 
