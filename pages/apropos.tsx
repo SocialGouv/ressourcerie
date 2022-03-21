@@ -30,6 +30,21 @@ const About: React.FC = () => (
         <p>
           La ressourcerie est à la fois un lieu d’échange, une plateforme technique collaborative fondée sur l’open source et un moyen d’animer la communauté data, IA et numérique du MTEI. 
         </p>
+        <p>La ressourcerie numérique s’inscrit donc dans cette perspective, et s’inspire de produits existants notamment :{' '}
+        <a
+            target="blank"
+            rel="noopener noreferrer"
+            href="https://api.gouv.fr"
+          > api.gouv.fr
+          </a>
+          {' '}
+           qui motorise cette version,{' '}
+           <a
+            target="blank"
+            rel="noopener noreferrer"
+            href="https://code.etalab.gouv.fr/"
+          >le répertoire des codes sources du service public d’Etalab, le catalogue des API de Pôle emploi.
+            </a></p>
       </div>
       <div>
         <a className="hidden-anchor" id="ressourcerie">
