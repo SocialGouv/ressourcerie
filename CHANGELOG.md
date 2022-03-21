@@ -1,3 +1,10 @@
+## [1.6.6](https://github.com/SocialGouv/ressourcerie/compare/v1.6.5...v1.6.6) (2022-03-21)
+
+
+### Bug Fixes
+
+* SEO replace home meta description ([82066e2](https://github.com/SocialGouv/ressourcerie/commit/82066e28049eceb968b5d0e054c90a480baacd77))
+
 ## [1.6.5](https://github.com/SocialGouv/ressourcerie/compare/v1.6.4...v1.6.5) (2022-03-21)
 
 
