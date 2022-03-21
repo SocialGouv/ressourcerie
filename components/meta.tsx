@@ -24,7 +24,7 @@ const Meta: React.FC<IProps> = ({
   const SITE_NAME = 'Ressourcerie';
   const SITE_URL = process.env.SITE_URL || 'https://ressourcerie.fabrique.social.gouv.fr';
   const SITE_DESCRIPTION =
-    'Simplifiez le partage et la circulation des données administratives';
+    'La plateforme qui centralise toutes les ressources de la sphère travail.';
 
   return (
     <>
@@ -37,14 +37,14 @@ const Meta: React.FC<IProps> = ({
           locale: 'fr_FR',
           title: title || SITE_NAME,
           description: description || SITE_DESCRIPTION,
-          /*images: [
+          images: [
             {
               url: '/images/linkedin.jpg',
               width: 1200,
               height: 627,
               alt: 'ressourcerie.fabrique.social.gouv.fr',
             },
-          ],*/
+          ],
           site_name: SITE_NAME,
         }}
       />
