@@ -38,7 +38,7 @@ const Home: React.FC<IProps> = ({ apis, articles }) => (
   <Page
     title="Ressourcerie"
     canonical={`https://ressourcerie.fabrique.social.gouv.fr`}
-    description="Simplifiez le partage et la circulation des données administratives grace à api.gouv, le site qui référence toutes les API du service public."
+    description="La plateforme qui centralise toutes les ressources de la sphère travail."
   >
     <Baseline />
     <ExplanationSection />
