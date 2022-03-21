@@ -1,3 +1,10 @@
+## [1.6.5](https://github.com/SocialGouv/ressourcerie/compare/v1.6.4...v1.6.5) (2022-03-21)
+
+
+### Bug Fixes
+
+* SEO replace miniature and description ([d3bc598](https://github.com/SocialGouv/ressourcerie/commit/d3bc598a9010e4937f90a6f17bd90a18f3035346))
+
 ## [1.6.4](https://github.com/SocialGouv/ressourcerie/compare/v1.6.3...v1.6.4) (2022-03-21)
 
 
