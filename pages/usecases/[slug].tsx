@@ -75,7 +75,7 @@ const Usecase: React.FC<IProps> = ({ usecase, related_ressources, related_guides
                             <h2>Les ressources utilisées</h2>
                             <div>
                             {related_ressources.map(ressource => (
-                                <div className="api-card">
+                                <div className="api-card" key={ressource.title}>
                                     <ApiCard key={ressource.title} {...ressource} />
                                 </div>
                             ))}
