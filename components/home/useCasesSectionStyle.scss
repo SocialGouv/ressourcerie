@@ -1,0 +1,66 @@
+@import '../../constants/colors.scss';
+
+section#usecases-triplet {
+  padding: 50px 0;
+
+  h2 {
+    padding-bottom: 10px;
+    font-weight: 400;
+  }
+
+  .uc-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    .taglines-uc {
+      padding-right:1rem;
+
+      .uc-card {
+        cursor: pointer;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        padding: 32px;
+        -webkit-box-align: baseline;
+        -webkit-align-items: baseline;
+        -ms-flex-align: baseline;
+        align-items: baseline;
+        p {
+          margin: 0;
+        }
+        h4 {
+          margin-top:0;
+        }
+        &.active {
+          border-radius: 8px;
+          background-color: #f6f8fe;
+          color: rgba(0,0,0,.8);
+        }
+      }
+
+    }
+
+    .image-uc {
+      padding:1rem;
+      display: flex;
+      align-items: center;
+      text-align:center;
+      img {
+        max-width:100%;
+        border-radius: 8px;
+        margin-bottom:1rem;
+      }
+    }
+
+  }
+
+  > div:last-child {
+    padding: 40px 0 0;
+  }
+
+  @media only screen and (min-width: 1px) and (max-width: 900px) {
+    .uc-grid {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+}

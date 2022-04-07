@@ -16,7 +16,7 @@ const explanations = [
 const ExplanationSection = () => (
   <div id="explanation-section">
     <div className="fr-container">
-      <h2>Vous développez un service data&nbsp;?</h2>
+      <h2>Vous développez un service numérique</h2>
       <div>
         {explanations.map(explanation => (
           <div key={explanation.src}>

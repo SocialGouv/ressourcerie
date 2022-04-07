@@ -9,12 +9,13 @@ const Baseline = () => (
     className="fr-container layout-center"
   >
     <h1>
-      Des communs pour les actions data de la sphère travail
+      Des communs pour les actions numériques de la sphère travail
     </h1>
     <br />
     <h2>
-    Partagez et réutilisez codes sources, algorithmes et documentation.
+    Partagez et réutilisez cas d'usages, ressources numériques et documentation.
     </h2>
+    <br />
     <div className="baseline-buttons">
       <ButtonLink href="/rechercher-commun" size="large">
         <span className="layout-center">

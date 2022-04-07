@@ -2,7 +2,7 @@ import React from 'react';
 
 import { ButtonLink } from '../../uiComponents';
 import { RichLink } from '../../uiComponents';
-import { getAllGuides, IGuideElement, IGuideElementShort } from '../../model';
+import { IGuideElementShort } from '../../model';
 
 const GuideLink: React.FC<{ guide: IGuideElementShort }> = ({ guide }) => (
     <RichLink
@@ -15,7 +15,6 @@ const GuideLink: React.FC<{ guide: IGuideElementShort }> = ({ guide }) => (
 
 
 const ArticleTripletSection = ({ articlesList } : {articlesList:any}) => {
-    //console.log('articlesssss : ', articlesList)
   return (
     <section id="article-triplet">
       <div className="fr-container">

@@ -2,45 +2,32 @@ import React from 'react';
 import { GetStaticProps } from 'next';
 
 import { getAllAPIs, IApi } from '../model';
-import { getAllGuides, IGuideElement, IGuideElementShort } from '../model';
-import { RichLink } from '../uiComponents';
+import { getAllGuides, getAllUseCases, IGuideElementShort } from '../model';
 import Page from '../layouts/page';
 
 import {
+  UseCasesSection,
   UseCaseSection,
   ApiTripletSection,
   ArticleTripletSection,
   ExplanationSection,
   Baseline,
-  DLNUFSection,
 } from '../components/home';
 
 interface IProps {
   apis: IApi[];
   articles: IGuideElementShort[];
+  UCList: IGuideElementShort[];
 }
 
-interface Props {
-  articles: IGuideElementShort[];
-  generalGuides: IGuideElementShort[];
-}
-
-const GuideLink: React.FC<{ guide: IGuideElementShort }> = ({ guide }) => (
-  <RichLink
-    title={guide.title}
-    image={guide.image ? `/images/guides/thumbnail_${guide.image}` : undefined}
-    href={guide.path}
-    labels={guide.api || []}
-  />
-);
-
-const Home: React.FC<IProps> = ({ apis, articles }) => (
+const Home: React.FC<IProps> = ({ apis, articles, UCList }) => (
   <Page
     title="Ressourcerie"
     canonical={`https://ressourcerie.fabrique.social.gouv.fr`}
     description="La plateforme qui centralise toutes les ressources de la sphère travail."
   >
     <Baseline />
+    <UseCasesSection  UCList={UCList}/>
     <ExplanationSection />
     <ApiTripletSection apiList={apis} />
     <UseCaseSection />
@@ -57,8 +44,11 @@ const Home: React.FC<IProps> = ({ apis, articles }) => (
 export const getStaticProps: GetStaticProps = async () => {
   const apiList = await getAllAPIs();
   const articlesList = await getAllGuides();
+  const UCList = await getAllUseCases();
 
   const mostInterstingArticles = articlesList.slice(0, 3)
+
+  const mostInterestingUseCases = UCList.slice(0, 3)
 
   const mostInterestingApis = apiList
     .sort((a, b) => ((a.visits_2019 || 0) > (b.visits_2019 || 0) ? -1 : 1)) 
@@ -67,7 +57,8 @@ export const getStaticProps: GetStaticProps = async () => {
   const refreshList = () => {
     return {
       apis: mostInterestingApis.slice(0, 3),
-      articles: mostInterstingArticles
+      articles: mostInterstingArticles,
+      UCList: mostInterestingUseCases
     };
   };
 
