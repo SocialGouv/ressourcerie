@@ -1,3 +1,10 @@
+## [1.7.1](https://github.com/SocialGouv/ressourcerie/compare/v1.7.0...v1.7.1) (2022-04-07)
+
+
+### Bug Fixes
+
+* add key on maps ([7186e82](https://github.com/SocialGouv/ressourcerie/commit/7186e82cc1412c451f0f2239f3970a8c3d0f281b))
+
 # [1.7.0](https://github.com/SocialGouv/ressourcerie/compare/v1.6.6...v1.7.0) (2022-04-07)
 
 
