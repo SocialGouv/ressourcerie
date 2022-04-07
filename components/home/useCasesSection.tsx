@@ -39,7 +39,8 @@ const UseCasesSection = ({ UCList } : {UCList:any}) => {
                 onClick={() => {
                   setActiveUC(index); 
                   console.log(UCList[index])
-                }}>
+                }}
+                key={index}>
                 <h4>{uc.title}</h4>
                 <p>{uc.tagline}</p>
               </div>

@@ -10,6 +10,7 @@ related_ressources:
   - api-entreprise
   - api-sirene-donnees-ouvertes
   - api-conventions-collectives
+  - codes-naf
 related_guides:
   - recherche_entreprise
   - api-definition
