@@ -1,3 +1,10 @@
+## [1.7.2](https://github.com/SocialGouv/ressourcerie/compare/v1.7.1...v1.7.2) (2022-04-07)
+
+
+### Bug Fixes
+
+* add ressource code naf ([7be9603](https://github.com/SocialGouv/ressourcerie/commit/7be960368dc19b222f554523567ccc22ce8ac618))
+
 ## [1.7.1](https://github.com/SocialGouv/ressourcerie/compare/v1.7.0...v1.7.1) (2022-04-07)
 
 
