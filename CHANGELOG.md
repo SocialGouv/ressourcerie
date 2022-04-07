@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/SocialGouv/ressourcerie/compare/v1.6.6...v1.7.0) (2022-04-07)
+
+
+### Features
+
+* add section usecases ([b20c6e7](https://github.com/SocialGouv/ressourcerie/commit/b20c6e79ea6c88311c3b98c7b0db0c577cd8434d))
+
 ## [1.6.6](https://github.com/SocialGouv/ressourcerie/compare/v1.6.5...v1.6.6) (2022-03-21)
 
 
