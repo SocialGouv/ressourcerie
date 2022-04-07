@@ -5,6 +5,7 @@ import {
   getAPI,
   getGuide,
   getAllGuides,
+  getAllUseCases,
   getProducer,
   getAllProducers,
   getRoadmap,
@@ -47,6 +48,7 @@ export interface IGuideElement extends IGuideElementShort {
   noindex: boolean;
   publish: boolean;
   related_guides?: string[];
+  related_ressources?: string[];
 }
 
 export interface IProducerElement {
@@ -152,6 +154,7 @@ export {
   getAPI,
   getGuide,
   getAllGuides,
+  getAllUseCases,
   getRoadmap,
   getProducer,
   getAllProducers,

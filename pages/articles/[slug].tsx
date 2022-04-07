@@ -40,7 +40,7 @@ const Guide: React.FC<IProps> = ({ guide, related_guides }) => {
       headerKey={HEADER_PAGE.APIS}
       title={title}
       description={`${tagline}`}
-      canonical={`https://api.gouv.fr/articles/${slug}`}
+      canonical={`https://ressourcerie.fabrique.social.gouv.fr/articles/${slug}`}
       noIndex={noindex}
       usePreFooter={false}
     >

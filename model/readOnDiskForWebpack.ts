@@ -11,6 +11,7 @@ import {
   formatApiWithOwner,
   formatRoadmap,
   formatGuide,
+  formatUsecase,
   formatProducteur,
 } from './formatters';
 import frontmatter from 'front-matter';
@@ -20,6 +21,7 @@ interface IStore {
   services: { [key: string]: IService };
   producers: { [key: string]: IProducerElement };
   guides: { [key: string]: IGuideElement };
+  usecases: { [key: string]: IGuideElement }
   roadmap: IRoadmapElement[];
 }
 
@@ -28,6 +30,7 @@ const store = {
   services: {},
   producers: {},
   guides: {},
+  usecases: {},
   roadmap: [],
 } as IStore;
 
@@ -121,6 +124,11 @@ export const getAllGuides = async (): Promise<IGuideElement[]> => {
   return Object.values(data);
 };
 
+export const getAllUseCases = async (): Promise<IGuideElement[]> => {
+  const data = await loadUsecases();
+  return Object.values(data);
+};
+
 export const getAllProducers = async (): Promise<IProducerElement[]> => {
   const data = await loadProducers();
   return Object.values(data);
@@ -153,6 +161,26 @@ export const loadGuides = async (): Promise<{
     store.guides = parseMarkdown(guideFolderContext, formatGuide);
   }
   return store.guides;
+};
+
+export const getUseCase = async (slug: string): Promise<IGuideElement> => {
+  const usecases = await loadUsecases();
+  return usecases[slug];
+};
+
+export const loadUsecases = async (): Promise<{
+  [key: string]: IGuideElement;
+}> => {
+  if (Object.keys(store.usecases).length === 0) {
+    //@ts-ignore
+    const usecasesFolderContext = require.context(
+      '../_data/usecases',
+      true,
+      /\.md$/
+    );
+    store.usecases = parseMarkdown(usecasesFolderContext, formatUsecase);
+  }
+  return store.usecases;
 };
 
 export const getProducer = async (slug: string): Promise<IProducerElement> => {
