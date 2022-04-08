@@ -1,3 +1,10 @@
+## [1.7.3](https://github.com/SocialGouv/ressourcerie/compare/v1.7.2...v1.7.3) (2022-04-08)
+
+
+### Bug Fixes
+
+* change wording button usecase ([821e24c](https://github.com/SocialGouv/ressourcerie/commit/821e24c609a6ceb130126876bcaa30b1fb1a9725))
+
 ## [1.7.2](https://github.com/SocialGouv/ressourcerie/compare/v1.7.1...v1.7.2) (2022-04-07)
 
 
