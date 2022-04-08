@@ -91,8 +91,6 @@ const SearchApis = ({ allApis, allThemes, allKinds, allProducers }) => {
 
     setApiList(newApiList);
 
-    console.log('test test')
-
     if(searchTerms && searchTerms !== '') {
       setIsLoading(true);
 

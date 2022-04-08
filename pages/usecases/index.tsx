@@ -62,7 +62,6 @@ export const getStaticProps = async () => {
   const guides = await getAllGuides();
 
   const simplify = (guide: IGuideElement): IGuideElementShort => {
-    console.log('TESTTTTT');
     return {
       path: guide.path,
       slug: guide.slug,
