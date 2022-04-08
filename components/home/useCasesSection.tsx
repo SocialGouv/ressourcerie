@@ -38,7 +38,6 @@ const UseCasesSection = ({ UCList } : {UCList:any}) => {
               <div className={`uc-card ${activeUC === index ? "active" : ""}`}
                 onClick={() => {
                   setActiveUC(index); 
-                  console.log(UCList[index])
                 }}
                 key={index}>
                 <h4>{uc.title}</h4>
@@ -52,7 +51,7 @@ const UseCasesSection = ({ UCList } : {UCList:any}) => {
               <br />
               <ButtonLink href={UCList[activeUC].path} size="large" alt>
                 <span className="layout-center">
-                  Accéder au usecase
+                  Accéder au cas d'usage
                 </span>
               </ButtonLink>
             </div>

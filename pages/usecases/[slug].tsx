@@ -32,7 +32,6 @@ const computeRelatedRessources = async (usecase: IGuideElement) => {
       async (slug: string) => await getAPI(slug)
     )
   );
-  console.log('related ressources : ', related_ressources)
   return related_ressources
 };
 
