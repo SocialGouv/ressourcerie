@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/SocialGouv/ressourcerie/compare/v1.7.3...v1.8.0) (2022-04-15)
+
+
+### Features
+
+* add article code du travail numérique ([774e2c9](https://github.com/SocialGouv/ressourcerie/commit/774e2c929321ea858d92dffaf1c9429f3dd85405))
+
 ## [1.7.3](https://github.com/SocialGouv/ressourcerie/compare/v1.7.2...v1.7.3) (2022-04-08)
 
 
