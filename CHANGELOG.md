@@ -1,3 +1,11 @@
+# [1.9.0](https://github.com/SocialGouv/ressourcerie/compare/v1.8.0...v1.9.0) (2022-04-28)
+
+
+### Features
+
+* article accident du travail ([1f1f002](https://github.com/SocialGouv/ressourcerie/commit/1f1f0029bb1dc18a58cef2b565c5ff79956f212f))
+* article tableau de bord visualisation ([afafb15](https://github.com/SocialGouv/ressourcerie/commit/afafb15e04c4ef91203e9dbe2d69f2e7f5368da4))
+
 # [1.8.0](https://github.com/SocialGouv/ressourcerie/compare/v1.7.3...v1.8.0) (2022-04-15)
 
 
