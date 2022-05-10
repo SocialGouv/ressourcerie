@@ -10,30 +10,17 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-
-  ##############################################################################
-  ## BUILD AND REGISTER DOCKER IMAGE
-  ##############################################################################
   register:
     name: Build & Register application
     runs-on: ubuntu-latest
     steps:
-
-    - name: Get project name
-      run: |
-        echo "project=${GITHUB_REPOSITORY#*/}" >> $GITHUB_ENV
-
     - name: Use autodevops build and register
       uses: SocialGouv/actions/autodevops-build-register@v1
       with:
         environment: prod
-        project: ${{ env.project }}
-        imageName: fabrique/ressourcerie
+        imagePackage: app
         token: ${{ secrets.GITHUB_TOKEN }}
 
-  ##############################################################################
-  ## DEPLOY PRODUCTION APPLICATION
-  ##############################################################################
   deploy:
     name: Deploy application
     runs-on: ubuntu-latest
@@ -42,20 +29,11 @@ jobs:
       name: production
       url: https://ressourcerie.fabrique.social.gouv.fr
     steps:
-
-    - name: Use autodevops manifests generation
-      uses: SocialGouv/actions/autodevops-manifests@v1
-      with:
-        environment: prod
-        rancherId: ${{ secrets.RANCHER_PROJECT_ID }}
-        socialgouvBaseDomain: ${{ secrets.SOCIALGOUV_BASE_DOMAIN }}
-      env:
-        NODE_OPTIONS: '--max_old_space_size=4096'
-
-    - name: Use autodevops deployment
-      uses: SocialGouv/actions/autodevops-deploy@v1
+    - name: Use kube-workflow deployment
+      uses: SocialGouv/kube-workflow@v1
       with:
         environment: prod
         token: ${{ secrets.GITHUB_TOKEN }}
         kubeconfig: ${{ secrets.KUBECONFIG }}
-        rancherId: ${{ secrets.RANCHER_PROJECT_ID }}
+        rancherProjectId: ${{ secrets.RANCHER_PROJECT_ID }}
+        rancherProjectName: ${{ secrets.RANCHER_PROJECT_NAME }}

@@ -12,57 +12,28 @@ concurrency:
   group: review-${{ github.ref }}
 
 jobs:
-
-  ##############################################################################
-  ## BUILD AND REGISTER DOCKER IMAGES
-  ##############################################################################
   register:
     name: Build & Register application
     runs-on: ubuntu-latest
     steps:
-
-    - name: Get project name
-      run: |
-        echo "project=${GITHUB_REPOSITORY#*/}" >> $GITHUB_ENV
-
     - name: Use autodevops build and register
       uses: SocialGouv/actions/autodevops-build-register@v1
       with:
         environment: dev
-        imageName: fabrique/ressourcerie
-        project: ${{ env.project }}
+        imagePackage: app
         token: ${{ secrets.GITHUB_TOKEN }}
 
-  ##############################################################################
-  ## GENERATE KUBERNETES MANIFESTS
-  ##############################################################################
-  manifests:
-    name: Generate k8s manifests
-    runs-on: ubuntu-latest
-    steps:
-
-    - name: Use autodevops manifests generation
-      uses: SocialGouv/actions/autodevops-manifests@v1
-      with:
-        environment: dev
-        rancherId: ${{ secrets.RANCHER_PROJECT_ID }}
-        socialgouvBaseDomain: ${{ secrets.SOCIALGOUV_BASE_DOMAIN }}
-      env:
-        NODE_OPTIONS: '--max_old_space_size=4096'
-
-  ##############################################################################
-  ## DEPLOY APPLICATION OVER KUBERNETES
-  ##############################################################################
   deploy:
-    name: Deploy application
+    name: Deploy review branch
     runs-on: ubuntu-latest
-    needs: [register, manifests]
+    needs: [register]
     steps:
 
-    - name: Use autodevops deployment
-      uses: SocialGouv/actions/autodevops-deploy@v1
+    - name: Use kube-workflow deployment
+      uses: SocialGouv/kube-workflow@v1
       with:
         environment: dev
         token: ${{ secrets.GITHUB_TOKEN }}
         kubeconfig: ${{ secrets.KUBECONFIG }}
-        rancherId: ${{ secrets.RANCHER_PROJECT_ID }}
+        rancherProjectId: ${{ secrets.RANCHER_PROJECT_ID }}
+        rancherProjectName: ${{ secrets.RANCHER_PROJECT_NAME }}

@@ -1,0 +1,4 @@
+app:
+  enabled: true
+  imagePackage: app
+  probesPath: /healthz
