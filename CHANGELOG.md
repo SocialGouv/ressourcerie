@@ -1,3 +1,10 @@
+# [1.10.0](https://github.com/SocialGouv/ressourcerie/compare/v1.9.0...v1.10.0) (2022-05-12)
+
+
+### Features
+
+* **ci:** use kube-workflow ([#39](https://github.com/SocialGouv/ressourcerie/issues/39)) ([9f0e28e](https://github.com/SocialGouv/ressourcerie/commit/9f0e28eabe98218a891e6ff5c3426dab37f6395c))
+
 # [1.9.0](https://github.com/SocialGouv/ressourcerie/compare/v1.8.0...v1.9.0) (2022-04-28)
 
 
