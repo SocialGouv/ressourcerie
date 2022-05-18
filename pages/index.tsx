@@ -12,6 +12,7 @@ import {
   ArticleTripletSection,
   ExplanationSection,
   Baseline,
+  NewsLetterSection,
 } from '../components/home';
 
 interface IProps {
@@ -28,6 +29,7 @@ const Home: React.FC<IProps> = ({ apis, articles, UCList }) => (
   >
     <Baseline />
     <UseCasesSection  UCList={UCList}/>
+    <NewsLetterSection />
     <ExplanationSection />
     <ApiTripletSection apiList={apis} />
     <UseCaseSection />
