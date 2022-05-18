@@ -1,3 +1,15 @@
+# [1.11.0](https://github.com/SocialGouv/ressourcerie/compare/v1.10.0...v1.11.0) (2022-05-18)
+
+
+### Bug Fixes
+
+* change token notion ([af8f991](https://github.com/SocialGouv/ressourcerie/commit/af8f991bc2369fdee6e301d2e007bb3c159e8aec))
+
+
+### Features
+
+* newsletter ([42adb4e](https://github.com/SocialGouv/ressourcerie/commit/42adb4ed557557171c6f9b7884345b3c9473a97a))
+
 # [1.10.0](https://github.com/SocialGouv/ressourcerie/compare/v1.9.0...v1.10.0) (2022-05-12)
 
 
