@@ -28,6 +28,7 @@
     "@babel/eslint-parser": "^7.14.4",
     "@babel/preset-typescript": "^7.13.0",
     "@babel/runtime": "^7.13.10",
+    "@notionhq/client": "^1.0.4",
     "@types/cors": "^2.8.10",
     "@types/d3": "6.7",
     "@types/d3-scale": "^4.0.1",

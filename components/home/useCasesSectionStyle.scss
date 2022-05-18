@@ -1,6 +1,7 @@
 @import '../../constants/colors.scss';
 
 section#usecases-triplet {
+  background-color: $lightestGrey;
   padding: 50px 0;
 
   h2 {
@@ -32,7 +33,7 @@ section#usecases-triplet {
         }
         &.active {
           border-radius: 8px;
-          background-color: #f6f8fe;
+          background-color: #e8ecf7;
           color: rgba(0,0,0,.8);
         }
       }

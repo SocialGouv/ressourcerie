@@ -1,0 +1,38 @@
+#newsletter-section {
+    
+    padding: 50px 0;
+  
+    h2,
+    h3 {
+      text-align: center;
+    }
+
+    .grid-newsletter {
+      margin-top: 2rem;
+      display: grid;
+      grid-template-columns: 50% 50%;
+
+      .text-nl {
+        padding-right:2rem;
+      }
+
+      .cta-nl {
+        padding: 1rem;
+        text-align: center;
+
+        .div-input {
+          max-width:350px;
+          margin: 0 auto;
+        }
+      }
+
+    }
+
+    @media only screen and (min-width: 1px) and (max-width: 900px) {
+      .grid-newsletter {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+}
