@@ -1,3 +1,10 @@
+## [1.11.1](https://github.com/SocialGouv/ressourcerie/compare/v1.11.0...v1.11.1) (2022-05-18)
+
+
+### Bug Fixes
+
+* fix sealed secret token notion ([91f22cc](https://github.com/SocialGouv/ressourcerie/commit/91f22cc97186bda4523ed7f6ca819f453bf76bc7))
+
 # [1.11.0](https://github.com/SocialGouv/ressourcerie/compare/v1.10.0...v1.11.0) (2022-05-18)
 
 
