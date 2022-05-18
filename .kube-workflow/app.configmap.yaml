@@ -1,0 +1,7 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: app-configmap
+data:
+  NODE_ENV: 'production'
+  NOTION_BASE: e4e03e2676c54de09cc3fb46a56c90df
