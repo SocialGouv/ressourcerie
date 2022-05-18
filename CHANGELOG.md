@@ -1,3 +1,10 @@
+## [1.11.5](https://github.com/SocialGouv/ressourcerie/compare/v1.11.4...v1.11.5) (2022-05-18)
+
+
+### Bug Fixes
+
+* fix sealed secrets remove configmaps ([38f7345](https://github.com/SocialGouv/ressourcerie/commit/38f73459fbc0450c988c430d82467866947e0166))
+
 ## [1.11.4](https://github.com/SocialGouv/ressourcerie/compare/v1.11.3...v1.11.4) (2022-05-18)
 
 
