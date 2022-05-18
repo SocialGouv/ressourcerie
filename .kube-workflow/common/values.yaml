@@ -10,6 +10,6 @@ app:
         name: app-sealed-secret
     - configMapRef:
         name: app-configmap
-  probesPath: /api/healthz
+  probesPath: /healthz
   replicas: 1
   imagePackage: app
