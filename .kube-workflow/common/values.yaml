@@ -5,8 +5,6 @@ app:
       value: 'https://{{ $.Values.global.host }}'
   envFrom:
     - secretRef:
-        name: pg-user
-    - secretRef:
         name: app-sealed-secret
     - configMapRef:
         name: app-configmap
