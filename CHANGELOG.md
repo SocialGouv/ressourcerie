@@ -1,3 +1,10 @@
+# [1.13.0](https://github.com/SocialGouv/ressourcerie/compare/v1.12.0...v1.13.0) (2022-05-19)
+
+
+### Features
+
+* new article programme occitanie ia - emploi et formation ([#54](https://github.com/SocialGouv/ressourcerie/issues/54)) ([158e4e4](https://github.com/SocialGouv/ressourcerie/commit/158e4e4d8f010eddb1422d4c141ace629b955ec7))
+
 # [1.12.0](https://github.com/SocialGouv/ressourcerie/compare/v1.11.10...v1.12.0) (2022-05-19)
 
 
