@@ -1,3 +1,10 @@
+# [1.14.0](https://github.com/SocialGouv/ressourcerie/compare/v1.13.0...v1.14.0) (2022-05-19)
+
+
+### Features
+
+* new article bce fce avec pierre vercautren ([#55](https://github.com/SocialGouv/ressourcerie/issues/55)) ([97b9d2d](https://github.com/SocialGouv/ressourcerie/commit/97b9d2d74efa328a0aebbb10fc0296c3a3785a11))
+
 # [1.13.0](https://github.com/SocialGouv/ressourcerie/compare/v1.12.0...v1.13.0) (2022-05-19)
 
 
