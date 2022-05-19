@@ -1,3 +1,10 @@
+## [1.14.1](https://github.com/SocialGouv/ressourcerie/compare/v1.14.0...v1.14.1) (2022-05-19)
+
+
+### Bug Fixes
+
+* update article activite partielle ([#57](https://github.com/SocialGouv/ressourcerie/issues/57)) ([313429d](https://github.com/SocialGouv/ressourcerie/commit/313429dd99a1d983e60ddb77e6c191adfd91a61b))
+
 # [1.14.0](https://github.com/SocialGouv/ressourcerie/compare/v1.13.0...v1.14.0) (2022-05-19)
 
 
