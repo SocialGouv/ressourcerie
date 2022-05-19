@@ -11,9 +11,9 @@ La crise sanitaire a eu des conséquences économiques et sociales majeures sur 
 
 ### **Le dispositif d’activité partielle : un appui aux entreprises en difficulté**
 
-![*`source: site [du Ministère du Travail, de l’Emploi et de l’Insertion](https://travail-emploi.gouv.fr/emploi-et-insertion/accompagnement-des-mutations-economiques/activite-partielle-chomage-partiel/article/activite-partielle-chomage-partiel)`* ](/images/guides/activite_partielle_1.png)
+![*source : site [du Ministère du Travail, de l’Emploi et de l’Insertion](https://travail-emploi.gouv.fr/emploi-et-insertion/accompagnement-des-mutations-economiques/activite-partielle-chomage-partiel/article/activite-partielle-chomage-partiel)* ](/images/guides/activite_partielle_1.png)
 
-_`source: site [du Ministère du Travail, de l’Emploi et de l’Insertion](https://travail-emploi.gouv.fr/emploi-et-insertion/accompagnement-des-mutations-economiques/activite-partielle-chomage-partiel/article/activite-partielle-chomage-partiel)`_
+_source : site [du Ministère du Travail, de l’Emploi et de l’Insertion](https://travail-emploi.gouv.fr/emploi-et-insertion/accompagnement-des-mutations-economiques/activite-partielle-chomage-partiel/article/activite-partielle-chomage-partiel)_
 
 \*\*\*\*Relevant des articles L. 5122-1 et suivants et R. 5122-1 et suivants du code du travail, l’activité partielle a pour objectif de prévenir les licenciements économiques. Il permet à l’employeur en difficulté de faire prendre en charge tout ou une partie du coût de la rémunération de ses salariés par l’Etat.
 
