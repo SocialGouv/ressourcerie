@@ -1,11 +1,13 @@
 ---
 title: Api.gouv.fr
 tagline: Code source d'api.gouv.fr, plateforme de mise en commun des données de toutes les administrations, pour construire des services innovants.
-producer: lab_ia
+producer: mtei
 category: Public
 is_open: 1 # -1 means API not open
 account_link: https://pole-emploi.io/inscription
 external_site: https://github.com/betagouv/api.gouv.fr
+partners:
+  - mtei
 keywords:
   - Ressourcerie
 contact_link: contact@numericite.eu
@@ -14,7 +16,7 @@ themes:
   - Emploi
 kind:
   - code source
-from: lab_ia
+from: mtei
 visits_2019: 1000
 last_update: 02/08/2021
 ---

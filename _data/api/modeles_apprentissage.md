@@ -1,11 +1,13 @@
 ---
 title: Inventaire des modèles pré-entraînés d’apprentissage du Lab IA d'Etalab
 tagline: Ce jeux de données recense les différents algorithmes entrainés à date par le Lab IA dans le cadre du développement de ses outils mutualisés
-producer: lab_ia
+producer: mtei
 category: Public
 is_open: 1 # -1 means API not open
 account_link: https://pole-emploi.io/inscription
 external_site: https://www.data.gouv.fr/fr/datasets/inventaire-des-modeles-pre-entraines-dapprentissage-du-lab-ia-detalab/
+partners:
+  - mtei
 keywords:
   - Ressourcerie
 contact_link: contact@numericite.eu
@@ -14,7 +16,7 @@ themes:
   - Emploi
 kind:
   - jeu de données
-from: lab_ia
+from: mtei
 visits_2019: 1000
 last_update: 02/08/2021
 ---
