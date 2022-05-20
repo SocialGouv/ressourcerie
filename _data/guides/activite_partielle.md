@@ -33,7 +33,7 @@ Le plan de contrôle de l’activité partielle prévoit trois niveaux de vérif
 
 L’outil de ciblage intervient dans la première phase du plan de contrôle : il permet notamment de déterminer les secteurs ayant effectué le plus de demandes d’activité partielle. En l’espèce, il s’agit par exemple du BTP, des activités de service administratif, de soutien et de conseil aux entreprises, des entreprises composées en majorité de cadres susceptibles de faire du télétravail.
 
-![Source : ASP-DGEFP-Dares - Extraction du SI APART 08 avril 2022, s’arrêtant aux données du 31 mars 2022.](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ddaa3f10-98dd-4476-a922-69572d80a1f9/CCD9C860-30B7-46A1-B68E-57B1D48B4C21.jpeg)
+![Source : ASP-DGEFP-Dares - Extraction du SI APART 08 avril 2022, s’arrêtant aux données du 31 mars 2022.](/images/guides/activite_partielle_2.jpeg)
 
 Source : ASP-DGEFP-Dares - Extraction du SI APART 08 avril 2022, s’arrêtant aux données du 31 mars 2022.
 
