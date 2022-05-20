@@ -1,3 +1,10 @@
+## [1.14.3](https://github.com/SocialGouv/ressourcerie/compare/v1.14.2...v1.14.3) (2022-05-20)
+
+
+### Bug Fixes
+
+* upgrade next version ([#63](https://github.com/SocialGouv/ressourcerie/issues/63)) ([857b981](https://github.com/SocialGouv/ressourcerie/commit/857b981a2903aa55b423fee8d30e53737cb1291e))
+
 ## [1.14.2](https://github.com/SocialGouv/ressourcerie/compare/v1.14.1...v1.14.2) (2022-05-20)
 
 
