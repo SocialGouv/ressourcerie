@@ -1,7 +1,7 @@
 ---
 title: Mieux cibler le contrôle de la fraude à l’activité partielle
 tagline: Faciliter le travail des agents de contrôle grâce à la donnée
-tags: fraude
+tags: fraude, travail, base de données, ciblage
 image: activite.png
 noindex: false # this page will appear on Google
 publish: true # this page will appear on /guides page
@@ -11,11 +11,11 @@ La crise sanitaire a eu des conséquences économiques et sociales majeures sur 
 
 ### **Le dispositif d’activité partielle : un appui aux entreprises en difficulté**
 
-![*source : site [du Ministère du Travail, de l’Emploi et de l’Insertion](https://travail-emploi.gouv.fr/emploi-et-insertion/accompagnement-des-mutations-economiques/activite-partielle-chomage-partiel/article/activite-partielle-chomage-partiel)* ](/images/guides/activite_partielle_1.png)
+![*source : site [du Ministère du Travail, de l’Emploi et de l’Insertion](https://travail-emploi.gouv.fr/emploi-et-insertion/accompagnement-des-mutations-economiques/activite-partielle-chomage-partiel/article/activite-partielle-chomage-partiel)*](/images/guides/activite_partielle_1.png)
 
 _source : site [du Ministère du Travail, de l’Emploi et de l’Insertion](https://travail-emploi.gouv.fr/emploi-et-insertion/accompagnement-des-mutations-economiques/activite-partielle-chomage-partiel/article/activite-partielle-chomage-partiel)_
 
-\*\*\*\*Relevant des articles L. 5122-1 et suivants et R. 5122-1 et suivants du code du travail, l’activité partielle a pour objectif de prévenir les licenciements économiques. Il permet à l’employeur en difficulté de faire prendre en charge tout ou une partie du coût de la rémunération de ses salariés par l’Etat.
+Relevant des articles L. 5122-1 et suivants et R. 5122-1 et suivants du code du travail, l’activité partielle a pour objectif de prévenir les licenciements économiques. Il permet à l’employeur en difficulté de faire prendre en charge tout ou une partie du coût de la rémunération de ses salariés par l’Etat.
 
 Dès mai 2020, plus d’un million d’entreprises avaient recours au dispositif d’activité partielle. Du fait de l’importance du soutien financier et du caractère quasi-automatique de l’obtention de l’indemnisation activité partielle, le MTEI a tenu à mettre en place un système de contrôle des demandes.
 
@@ -33,7 +33,7 @@ Le plan de contrôle de l’activité partielle prévoit trois niveaux de vérif
 
 L’outil de ciblage intervient dans la première phase du plan de contrôle : il permet notamment de déterminer les secteurs ayant effectué le plus de demandes d’activité partielle. En l’espèce, il s’agit par exemple du BTP, des activités de service administratif, de soutien et de conseil aux entreprises, des entreprises composées en majorité de cadres susceptibles de faire du télétravail.
 
-![Source : ASP-DGEFP-Dares - Extraction du SI APART 08 avril 2022, s’arrêtant aux données du 31 mars 2022.](/images/guides/activite_partielle_2.jpeg)
+![Source : ASP-DGEFP-Dares - Extraction du SI APART 08 avril 2022, s’arrêtant aux données du 31 mars 2022.](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ddaa3f10-98dd-4476-a922-69572d80a1f9/CCD9C860-30B7-46A1-B68E-57B1D48B4C21.jpeg)
 
 Source : ASP-DGEFP-Dares - Extraction du SI APART 08 avril 2022, s’arrêtant aux données du 31 mars 2022.
 
