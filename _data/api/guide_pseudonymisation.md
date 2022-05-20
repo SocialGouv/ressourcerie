@@ -1,7 +1,7 @@
 ---
 title: Pseudonymiser des documents grâce à l'IA
 tagline: Guide qui expose ce qu'est la pseudonymisation de documents textuels et, lorsque c'est possible, l'utilisation de l'intelligence artificielle (IA) pour la mettre en œuvre.
-producer: lab_ia
+producer: lab-ia-dinum
 category: Public
 is_open: 1 # -1 means API not open
 account_link: https://pole-emploi.io/inscription
@@ -14,7 +14,7 @@ themes:
   - Emploi
 kind:
   - documentation
-from: lab_ia
+from: lab-ia
 visits_2019: 1000
 last_update: 02/08/2021
 ---
