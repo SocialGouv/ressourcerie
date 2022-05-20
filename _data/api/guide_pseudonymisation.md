@@ -1,13 +1,11 @@
 ---
 title: Pseudonymiser des documents grâce à l'IA
 tagline: Guide qui expose ce qu'est la pseudonymisation de documents textuels et, lorsque c'est possible, l'utilisation de l'intelligence artificielle (IA) pour la mettre en œuvre.
-producer: mtei
+producer: lab_ia
 category: Public
 is_open: 1 # -1 means API not open
 account_link: https://pole-emploi.io/inscription
 external_site: https://guides.etalab.gouv.fr/pseudonymisation/#a-quoi-sert-ce-guide
-partners:
-  - mtei
 keywords:
   - Ressourcerie
 contact_link: contact@numericite.eu
@@ -16,7 +14,7 @@ themes:
   - Emploi
 kind:
   - documentation
-from: mtei
+from: lab_ia
 visits_2019: 1000
 last_update: 02/08/2021
 ---
