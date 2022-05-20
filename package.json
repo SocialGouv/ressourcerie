@@ -1,6 +1,6 @@
 {
   "name": "ressourcerie",
-  "version": "1.14.1",
+  "version": "1.14.2",
   "repository": "https://github.com/SocialGouv/ressourcerie",
   "license": "AGPL-3.0-or-later",
   "node": "=16.4",
