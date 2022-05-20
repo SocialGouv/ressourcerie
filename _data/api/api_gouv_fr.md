@@ -1,7 +1,7 @@
 ---
 title: Api.gouv.fr
 tagline: Code source d'api.gouv.fr, plateforme de mise en commun des données de toutes les administrations, pour construire des services innovants.
-producer: lab_ia
+producer: lab-ia
 category: Public
 is_open: 1 # -1 means API not open
 account_link: https://pole-emploi.io/inscription
@@ -14,7 +14,7 @@ themes:
   - Emploi
 kind:
   - code source
-from: lab_ia
+from: lab-ia
 visits_2019: 1000
 last_update: 02/08/2021
 ---
