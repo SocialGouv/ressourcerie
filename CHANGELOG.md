@@ -1,3 +1,10 @@
+## [1.14.7](https://github.com/SocialGouv/ressourcerie/compare/v1.14.6...v1.14.7) (2022-05-24)
+
+
+### Bug Fixes
+
+* **ci:** fix preprod sealed-secret namespace ([dd53d1e](https://github.com/SocialGouv/ressourcerie/commit/dd53d1e2c82bf4bc4096f5a558d07998b3fbce42))
+
 ## [1.14.6](https://github.com/SocialGouv/ressourcerie/compare/v1.14.5...v1.14.6) (2022-05-20)
 
 
