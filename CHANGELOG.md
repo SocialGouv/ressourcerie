@@ -1,3 +1,10 @@
+## [1.14.8](https://github.com/SocialGouv/ressourcerie/compare/v1.14.7...v1.14.8) (2022-05-25)
+
+
+### Bug Fixes
+
+* **ci:** sealed-secrets ([8c207ec](https://github.com/SocialGouv/ressourcerie/commit/8c207ece456fb1ebf4a8f77b4b3c9c2b5f87d034))
+
 ## [1.14.7](https://github.com/SocialGouv/ressourcerie/compare/v1.14.6...v1.14.7) (2022-05-24)
 
 
