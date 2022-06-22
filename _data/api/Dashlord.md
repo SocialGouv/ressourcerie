@@ -1,42 +1,29 @@
 ---
 title: Dashlord
-tagline: Tableau de bord des bonnes pratiques techniques.
-external_site: https://api.openfisca.fr
-is_open: 1 # 1 means API is fully open
-partners:
-  - beta.gouv.fr
-  - Etalab
-  - Institut des Politiques Publiques
-producer: mtei
-keywords:
-  - Impôts
-  - Fiscalité
-  - Cotisations sociales
-  - Prélèvements sociaux
-  - Prestations sociales
-  - Droit
-  - Simulateur
-themes:
-  - Administration & législation
+tagline: Le tableau de bord des bonnes pratiques techniques.
 kind:
   - Code source
-contact_link: contact@openfisca.fr
-doc_tech_link: https://fr.openfisca.org/api/latest/spec
-visits_2019: 10000
-last_update: 15/01/2019
+doc_tech_link:
+doc_tech_external: https://github.com/SocialGouv/dashlord
+producer: fabrique
+is_open: 1
+themes:
+  - Autre
+
+keywords:
+  - Développement
+  - Bonnes pratiques numériques
+  - RGPD
+  - Tableau de bord
+  - audit
 ---
 
-### Calculer le droit
+Dashlord est un tableau de bord des bonnes pratiques techniques.
 
-API AAA est un moteur de calcul libre et ouvert qui permet de modéliser le système socio-fiscal de manière collaborative et transparente. Il permet de calculer un grand nombre de prélèvements sociaux, prestations sociales et d'impôts, et de simuler l'impact de réformes sur ces montants.
-Envoyez une situation, précisez ce que vous souhaitez calculer, et recevez des résultats en quelques millisecondes !
+DashLord est **100% open source**, vous pouvez y contribuer en créant de la documentation, en proposant du code, ou encore en partageant vos questions sur le repository github.
 
-Plusieurs milliers de variables sont calculables, et une [interface simple et claire](https://legislation.openfisca.fr) vous permet de toutes les découvrir.
+L'objectif de DashLord est d'identifier des points d'attention mais aussi de proposer des solutions actionnables.
 
-### Obtenir les valeurs définies par la loi
+DashLord est né à la Fabrique des ministères sociaux pour répondre aux besoins d'évaluation et de mise en oeuvre des bonnes pratiques de développement web.
 
-En plus de ses capacités de calcul, OpenFisca expose également l'intégralité des valeurs de référence de la législation ([tranches d'imposition](https://legislation.openfisca.fr/impot_revenu.bareme), [taux AT/MP](https://legislation.openfisca.fr/cotsoc.accident.faible), montant du SMIC…), avec une couverture historique qui peut se compter en décennies.
-
-### Exemples
-
-Ce logiciel est utilisé par des chercheurs en économie et des services publics comme mes-aides.gouv.fr, embauche.beta.gouv.fr ou mesdroitssociaux.gouv.fr.
+Vous pouvez facilement créer votre propre DashLord pour vos URLs en suivant les instructions sur le GitHub.
