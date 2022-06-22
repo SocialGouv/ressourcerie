@@ -1,3 +1,24 @@
+## [1.14.8](https://github.com/SocialGouv/ressourcerie/compare/v1.14.7...v1.14.8) (2022-05-25)
+
+
+### Bug Fixes
+
+* **ci:** sealed-secrets ([8c207ec](https://github.com/SocialGouv/ressourcerie/commit/8c207ece456fb1ebf4a8f77b4b3c9c2b5f87d034))
+
+## [1.14.7](https://github.com/SocialGouv/ressourcerie/compare/v1.14.6...v1.14.7) (2022-05-24)
+
+
+### Bug Fixes
+
+* **ci:** fix preprod sealed-secret namespace ([dd53d1e](https://github.com/SocialGouv/ressourcerie/commit/dd53d1e2c82bf4bc4096f5a558d07998b3fbce42))
+
+## [1.14.6](https://github.com/SocialGouv/ressourcerie/compare/v1.14.5...v1.14.6) (2022-05-20)
+
+
+### Bug Fixes
+
+* update article activite partielle ([#66](https://github.com/SocialGouv/ressourcerie/issues/66)) ([7f71e80](https://github.com/SocialGouv/ressourcerie/commit/7f71e80e6944c059cf058da0a8c835beecd7c3ac))
+
 ## [1.14.5](https://github.com/SocialGouv/ressourcerie/compare/v1.14.4...v1.14.5) (2022-05-20)
 
 
