@@ -1,15 +1,39 @@
 import type { NextApiHandler } from "next";
 import { Client } from '@notionhq/client';
 
+import { ArticlesCms, ProducteurCms, RessourcesCms } from '../../../utils/notion_connector'
+
 const handler: NextApiHandler = async (req, res) => {
 
-  if (req.method == "GET") {
+  if (req.method == "POST") {
     await post(req, res);
+  } else if (req.method == "GET") {
+    await get(req, res)
   } else {
     res.status(405).end();
     return;
   }
 };
+
+const get: NextApiHandler = async (req, res) => {
+
+  const ProducteursConnector = new ProducteurCms( process.env.NOTION_PRODUCTEURS_BASE_ID || '')
+  await ProducteursConnector.querry_items_and_content()
+  await ProducteursConnector.construct_and_write_file()
+  await ProducteursConnector.update_need_pull()
+
+  const RessourcesConnector = new RessourcesCms( process.env.NOTION_RESSOURCES_BASE_ID || '')
+  await RessourcesConnector.querry_items_and_content()
+  await RessourcesConnector.construct_and_write_file()
+  await RessourcesConnector.update_need_pull()
+
+  const ArticlesConnector = new ArticlesCms( process.env.NOTION_ARTICLES_BASE_ID || '')
+  await ArticlesConnector.querry_items_and_content()
+  await ArticlesConnector.construct_and_write_file()
+  await ArticlesConnector.update_need_pull()
+
+  res.status(200).json({ itemsToUpdate: ArticlesConnector.get_items_to_update() });
+}
 
 const post: NextApiHandler = async (req, res) => {
     const email = req.query.email as string
@@ -25,7 +49,7 @@ const post: NextApiHandler = async (req, res) => {
         (async () => {
             const response = await notion.pages.create({
               parent: {
-                database_id: "e4e03e2676c54de09cc3fb46a56c90df",
+                database_id: process.env.NOTION_BASE as string,
               },
                  icon: {
                   type: "emoji",

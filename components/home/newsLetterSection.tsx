@@ -15,7 +15,7 @@ const NewsLetterSection = () => {
       }
 
       const addMailNotion = async (email: string) => {
-        const response = await fetch(`/api/notion?email=${email}`)
+        const response = await fetch(`/api/notion?email=${email}`, {method:'POST'})
         return response.ok
       }
   
