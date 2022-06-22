@@ -1,3 +1,10 @@
+# [1.15.0](https://github.com/SocialGouv/ressourcerie/compare/v1.14.8...v1.15.0) (2022-06-22)
+
+
+### Features
+
+* connector notion ([#70](https://github.com/SocialGouv/ressourcerie/issues/70)) ([a29a84d](https://github.com/SocialGouv/ressourcerie/commit/a29a84d921e7e9d6c1a549242333a59f82b4cfcf))
+
 ## [1.14.8](https://github.com/SocialGouv/ressourcerie/compare/v1.14.7...v1.14.8) (2022-05-25)
 
 
