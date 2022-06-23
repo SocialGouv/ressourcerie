@@ -1,5 +1,4 @@
 ---
-name: Ministère du Travail, de l'Emploi et de l'Insertion
 acronym: MTEI
 type: Ministère
 logo: ministere-travail.png
