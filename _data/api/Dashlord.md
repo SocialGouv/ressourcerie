@@ -3,8 +3,8 @@ title: Dashlord
 tagline: Le tableau de bord des bonnes pratiques techniques.
 kind:
   - Code source
-doc_tech_link:
-doc_tech_external: https://github.com/SocialGouv/dashlord
+doc_tech_link: https://github.com/SocialGouv/dashlord
+doc_tech_external: https://dashlord.incubateur.net/
 producer: fabrique
 is_open: 1
 themes:
