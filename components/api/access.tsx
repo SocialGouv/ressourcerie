@@ -83,6 +83,7 @@ const Access: React.FC<IAccessProps> = ({
           label="Prendre contact"
         />
       );
+      console.log('1 : ', accessHref)
       ext = true;
       break;
     case -1:
@@ -116,7 +117,7 @@ const Access: React.FC<IAccessProps> = ({
         }
       </div>
       <div className="layout-right vertical-margin">
-      {doc_swagger_link !== null &&
+      {is_open === 1 && doc_swagger_link !== null &&
         <ButtonLink
           href={accessHref2}
           size="large"
