@@ -180,7 +180,7 @@ export class ProducteurCms extends NotionCms {
             && "select" in result.properties?.type
             && "files" in result.properties?.logo) {
             this.itemsToUpdate.items[index].fileMD = `--- \n`.concat(
-              `name: ` + "rich_text" in result.properties?.name ? result.properties?.name.rich_text[0].plain_text + '\n' : '',
+              `name: ` + result.properties?.name.rich_text[0].plain_text + '\n',
               `acronym: ` + result.properties?.acronym.rich_text[0].plain_text + '\n',
               `type: ` + result.properties?.type.select?.name + '\n',
               `logo: ` + result.properties?.logo.files[0].name + '\n',
@@ -320,6 +320,70 @@ export class ArticlesCms extends NotionCms {
             }
             if("title" in result.properties?.Name && "text" in result.properties?.Name.title[0])
             await this.write_file(`${result.properties?.Name.title[0].text.content}.md`, this.itemsToUpdate.items[index].fileMD || '', '_data/guides')
+          }
+          index++
+        }
+      }
+    }
+  }
+
+}
+
+
+export class UsecaseCms extends NotionCms {
+
+  constructor (database_id: string) {
+    super(database_id)
+  }
+
+  construct_and_write_file = async () => {
+
+    if(this.itemsToUpdate !== undefined) {
+      let index = 0
+      for(let result of this.itemsToUpdate.results || []) {
+        if(this.itemsToUpdate.items && "properties" in result) {
+            if("rich_text" in result.properties?.title
+            && "rich_text" in result.properties?.tagline
+            && "multi_select" in result.properties?.tags
+            && "relation" in result.properties?.related_ressources
+            && "files" in result.properties?.image
+            && "select" in result.properties?.type
+            && "files" in result.properties?.logo) {
+            this.itemsToUpdate.items[index].fileMD = `--- \n`.concat(
+              `title: ` + result.properties?.title.rich_text[0].plain_text + '\n',
+              `tagline: ` + result.properties?.tagline.rich_text[0].plain_text + '\n',
+              `tags: ` + map(result.properties?.tags.multi_select, 'name') + '\n',
+              `image: ` + result.properties?.image.files[0].name + '\n',
+              `noindex: false # this page will appear on Google \n`,
+              `publish: true # this page will appear on /guides page \n`
+            )
+            if(result.properties?.related_ressources.relation[0]) {
+              this.itemsToUpdate.items[index].fileMD = this.itemsToUpdate.items[index].fileMD?.concat(
+                `related_ressources: ` + await this.notion.pages.retrieve({
+                  page_id: result.properties?.related_ressources.relation[0].id
+                }).then((producer) => {
+                  if("properties" in producer && "title" in producer.properties.Name && "text" in producer.properties.Name.title[0])
+                  return ` \n  - ` + producer.properties.Name.title[0].text.content
+                }) + '\n',
+                `--- \n\n`
+              )
+            } else {
+              this.itemsToUpdate.items[index].fileMD = this.itemsToUpdate.items[index].fileMD?.concat(
+                `--- \n\n`
+              )
+            }
+            if("file" in result.properties?.image.files[0])
+            await this.fetch_and_write(result.properties?.image.files[0].file.url, `${result.properties?.image.files[0].name}`, 'public/images/usecases', true)
+            let numberImage = 0
+            for(let block of this.itemsToUpdate.items[index].contents || []) {
+              if("type" in block && block.type === 'image')numberImage++
+              if("type" in block && "title" in result.properties?.Name && "text" in result.properties?.Name.title[0])
+              this.itemsToUpdate.items[index].fileMD = this.itemsToUpdate.items[index].fileMD?.concat(
+                await this.format_blocks(block.type || '', block, numberImage, result.properties?.Name.title[0].text.content.replace(/ /g,"_")) || ''
+              )
+            }
+            if("title" in result.properties?.Name && "text" in result.properties?.Name.title[0])
+            await this.write_file(`${result.properties?.Name.title[0].text.content}.md`, this.itemsToUpdate.items[index].fileMD || '', '_data/usecases')
           }
           index++
         }
