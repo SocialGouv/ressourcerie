@@ -7,6 +7,7 @@ noindex: false # this page will appear on Google
 publish: true # this page will appear on /guides page
 related_ressources:
   - api.gouv.fr
+  - Ressourcerie
 ---
 
 L’Etat tente de plus en plus d’appuyer ses productions numériques en participant à des initiatives préexistantes ou en tentant d’élargir le cercle des participants traditionnels aux projets informatiques. Cette approche tend à pousser la collaboration entre organisations et à s’ouvrir vers d’autres modes de travail, savoir-faire et profils. C’est le partage qui permet d’augmenter la valeur intrinsèque du commun.
