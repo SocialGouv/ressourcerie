@@ -1,7 +1,7 @@
 import type { NextApiHandler } from "next";
 import { Client } from '@notionhq/client';
 
-import { ArticlesCms, ProducteurCms, RessourcesCms } from '../../../utils/notion_connector'
+import { ArticlesCms, ProducteurCms, RessourcesCms, UsecaseCms } from '../../../utils/notion_connector'
 
 const handler: NextApiHandler = async (req, res) => {
 
@@ -17,22 +17,33 @@ const handler: NextApiHandler = async (req, res) => {
 
 const get: NextApiHandler = async (req, res) => {
 
-  const ProducteursConnector = new ProducteurCms( process.env.NOTION_PRODUCTEURS_BASE_ID || '')
-  await ProducteursConnector.querry_items_and_content()
-  await ProducteursConnector.construct_and_write_file()
-  await ProducteursConnector.update_need_pull()
+  try {
 
-  const RessourcesConnector = new RessourcesCms( process.env.NOTION_RESSOURCES_BASE_ID || '')
-  await RessourcesConnector.querry_items_and_content()
-  await RessourcesConnector.construct_and_write_file()
-  //await RessourcesConnector.update_need_pull()
+    const ProducteursConnector = new ProducteurCms( process.env.NOTION_PRODUCTEURS_BASE_ID || '')
+    await ProducteursConnector.querry_items_and_content()
+    await ProducteursConnector.construct_and_write_file()
+    await ProducteursConnector.update_need_pull()
+  
+    const RessourcesConnector = new RessourcesCms( process.env.NOTION_RESSOURCES_BASE_ID || '')
+    await RessourcesConnector.querry_items_and_content()
+    await RessourcesConnector.construct_and_write_file()
+    await RessourcesConnector.update_need_pull()
+  
+    const ArticlesConnector = new ArticlesCms( process.env.NOTION_ARTICLES_BASE_ID || '')
+    await ArticlesConnector.querry_items_and_content()
+    await ArticlesConnector.construct_and_write_file()
+    await ArticlesConnector.update_need_pull()
+  
+    const UsecaseConnector = new UsecaseCms( process.env.NOTION_ARTICLES_BASE_ID || '')
+    await UsecaseConnector.querry_items_and_content()
+    await UsecaseConnector.construct_and_write_file()
+    await UsecaseConnector.update_need_pull()
 
-  const ArticlesConnector = new ArticlesCms( process.env.NOTION_ARTICLES_BASE_ID || '')
-  await ArticlesConnector.querry_items_and_content()
-  await ArticlesConnector.construct_and_write_file()
-  await ArticlesConnector.update_need_pull()
+    res.status(200).json({ itemsToUpdate: UsecaseConnector.get_items_to_update() });
 
-  res.status(200).json({ itemsToUpdate: ArticlesConnector.get_items_to_update() });
+  } catch(e) {
+    res.status(500).json({e})
+  }
 }
 
 const post: NextApiHandler = async (req, res) => {
