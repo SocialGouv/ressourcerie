@@ -1,3 +1,10 @@
+## [1.15.6](https://github.com/SocialGouv/ressourcerie/compare/v1.15.5...v1.15.6) (2022-06-23)
+
+
+### Bug Fixes
+
+* fix button contact ([#76](https://github.com/SocialGouv/ressourcerie/issues/76)) ([203b024](https://github.com/SocialGouv/ressourcerie/commit/203b0245f34514609bb18df9bb8c9bae7d51a9d8))
+
 ## [1.15.5](https://github.com/SocialGouv/ressourcerie/compare/v1.15.4...v1.15.5) (2022-06-23)
 
 
