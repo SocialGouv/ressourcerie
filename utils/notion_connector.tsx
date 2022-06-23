@@ -8,29 +8,30 @@ type ArrayElement<ArrayType extends readonly unknown[]> =
   ArrayType extends readonly (infer ElementType)[] ? ElementType : never;
 
 type BlockOrPartial = ArrayElement<ListBlockChildrenResponse["results"]>;
-
 type ItemExtractor<Match extends Partial<BlockOrPartial>> = Extract<BlockOrPartial, Match>
+
+type DBResponse = ArrayElement<QueryDatabaseResponse["results"]>;
 
 
 interface ItemsToUpdate {
   items?: Array<{
-    properties?: any[];
     contents?: ListBlockChildrenResponse["results"];
     fileMD?: string;
     id?: string;
   }>;
-  results?: QueryDatabaseResponse["results"];
+  results?: DBResponse[];
 }
 
 export class NotionCms {
 
   database_id: string;
   notion: Client;
-  itemsToUpdate?: ItemsToUpdate;
+  itemsToUpdate: ItemsToUpdate;
 
   constructor(database_id: string) {
     this.database_id = database_id;
     this.notion = new Client({ auth: process.env.NOTION_INTEGRATION_TOKEN });
+    this.itemsToUpdate = {}
   }
 
   set_items_to_update = (itemsToUpdate: ItemsToUpdate) => {
@@ -64,12 +65,13 @@ export class NotionCms {
           let blocks = await this.notion.blocks.children.list({
             block_id: item.id
           })
-          itemsToUpdate.items.push({
-            id: item.id,
-            properties: item.properties,
-            contents: blocks.results,
-            fileMD: ''
-          })
+          if("properties" in item) {
+            itemsToUpdate.items.push({
+              id: item.id,
+              contents: blocks.results,
+              fileMD: ''
+            })
+          }
         }
         this.set_items_to_update(itemsToUpdate)
         return itemsToUpdate
@@ -126,7 +128,7 @@ export class NotionCms {
         return '> ' + await this.format_sentence(block[`${blockType}`].rich_text) + ' \n\n'
       case 'image': 
         blockk = block as ItemExtractor<{ type: 'image' }>
-        if(block.image.type === 'file'){
+        if('file' in blockk.image){
           console.log('in image ', numberImage)
           await this.fetch_and_write(blockk.image.file.url, `${name}_${numberImage}.png`, 'public/images/guides', false)
         }
@@ -163,30 +165,40 @@ export class ProducteurCms extends NotionCms {
   }
 
   construct_and_write_file = async () => {
-    if(this.itemsToUpdate) {
-      for(let item of this.itemsToUpdate?.items || []) {
-        item.fileMD = `--- \n`.concat(
-          `name: ` + item.properties?.name.rich_text[0].plain_text + '\n',
-          `acronym: ` + item.properties?.acronym.rich_text[0].plain_text + '\n',
-          `type: ` + item.properties?.type.select.name + '\n',
-          `logo: ` + item.properties?.logo.files[0].name + '\n',
-          `short: ` + item.properties?.short.rich_text[0].plain_text + '\n',
-          `description: ` + item.properties?.description.rich_text[0].plain_text.replace(/\n/g, "\n  ") + '\n',
-          `contact: ${item.properties?.contact.rich_text[0] ? item.properties?.contact.rich_text[0].plain_text : ''}` + ' \n',
-          `annuaire: ${item.properties?.annuaire.rich_text[0] ? item.properties?.annuaire.rich_text[0].plain_text : ''}` + ' \n',
-          `site: ${item.properties?.site.rich_text[0] ? item.properties?.site.rich_text[0].plain_text : ''}` + ' \n',
-          `siteOpenData: ${item.properties?.siteOpenData.rich_text[0] ? item.properties?.siteOpenData.rich_text[0].plain_text : ''}` + ' \n',
-          `--- \n\n`
-        )
-        fetch(item.properties?.logo.files[0].file.url)
-        .then(
-          async (res) => {
-            const buffer = await res.buffer();
-            this.write_file(`${item.properties?.logo.files[0].name}`, buffer, 'public/images/api-logo')
+    if(this.itemsToUpdate !== undefined) {
+      let index = 0
+      for(let result of this.itemsToUpdate.results || []) {
+        if(this.itemsToUpdate.items && "properties" in result) {
+            if("rich_text" in result.properties?.name
+            && "rich_text" in result.properties?.acronym
+            && "rich_text" in result.properties?.short
+            && "rich_text" in result.properties?.description
+            && "rich_text" in result.properties?.contact
+            && "rich_text" in result.properties?.annuaire
+            && "rich_text" in result.properties?.site 
+            && "rich_text" in result.properties?.siteOpenData
+            && "select" in result.properties?.type
+            && "files" in result.properties?.logo) {
+            this.itemsToUpdate.items[index].fileMD = `--- \n`.concat(
+              `name: ` + "rich_text" in result.properties?.name ? result.properties?.name.rich_text[0].plain_text + '\n' : '',
+              `acronym: ` + result.properties?.acronym.rich_text[0].plain_text + '\n',
+              `type: ` + result.properties?.type.select?.name + '\n',
+              `logo: ` + result.properties?.logo.files[0].name + '\n',
+              `short: ` + result.properties?.short.rich_text[0].plain_text + '\n',
+              `description: ` + result.properties?.description.rich_text[0].plain_text.replace(/\n/g, "\n  ") + '\n',
+              `contact: ${result.properties?.contact.rich_text[0] ? result.properties?.contact.rich_text[0].plain_text : ''}` + ' \n',
+              `annuaire: ${result.properties?.annuaire.rich_text[0] ? result.properties?.annuaire.rich_text[0].plain_text : ''}` + ' \n',
+              `site: ${result.properties?.site.rich_text[0] ? result.properties?.site.rich_text[0].plain_text : ''}` + ' \n',
+              `siteOpenData: ${result.properties?.siteOpenData.rich_text[0] ? result.properties?.siteOpenData.rich_text[0].plain_text : ''}` + ' \n',
+              `--- \n\n`
+            )
+            if("file" in result.properties?.logo.files[0])
+            await this.fetch_and_write(result.properties?.logo.files[0].file.url, `${result.properties?.logo.files[0].name}`, 'public/images/api-logo', false)
+            if('title' in result.properties?.Name && "text" in result.properties?.Name.title[0])
+            await this.write_file(`${result.properties?.Name.title[0].text.content}.md`, this.itemsToUpdate.items[index].fileMD || '', '_data/producteurs')  
           }
-        )
-        await this.fetch_and_write(item.properties?.logo.files[0].file.url, `${item.properties?.logo.files[0].name}`, 'public/images/api-logo', false)
-        await this.write_file(`${item.properties?.Name.title[0].text.content}.md`, item.fileMD, '_data/producteurs')
+          index++
+        }
       }
     }
   }
@@ -201,35 +213,52 @@ export class RessourcesCms extends NotionCms {
   }
 
   construct_and_write_file = async () => {
-    if(this.itemsToUpdate) {
-      for(let item of this.itemsToUpdate?.items || []) {
-        console.log('item : ', item.properties?.title.rich_text[0].plain_text)
-        item.fileMD = `--- \n`.concat(
-          `title: ` + ''.concat(... map(item.properties?.title.rich_text, 'plain_text')) + '\n',
-          `tagline: ${item.properties?.tagline.rich_text[0] ? ''.concat(... map(item.properties?.tagline.rich_text, 'plain_text')).replace(':', '') : ''} ` + '\n',
-          `kind: ` + '\n  - ' + item.properties?.type.select.name + '\n',
-          `doc_tech_link: ${item.properties?.documentation.url ? item.properties?.documentation.url : ''}` + '\n',
-          `doc_tech_external: ${item.properties?.link.url ? item.properties?.link.url : ''}` + '\n',
-          `producer: ` + await this.notion.pages.retrieve({
-            page_id: item.properties?.Producteur.relation[0].id
-          }).then((producer) => {
-            return producer.properties.Name.title[0].text.content
-          }) + '\n',
-          `is_open:` + (item.properties?.conditions_utilisation.select.name === 'Ouverte' ? ' 1' : item.properties?.conditions_utilisation.select.name === 'Ouverte sur demande' ? ' 0' : ' -1') + '\n',
-          `themes: \n` + item.properties?.themes.multi_select.map((theme:any) => {
-            return '  - ' + theme.name + '\n'
-          }).toString().replace(/,/g, '') + '\n',
-          `keywords: \n` + item.properties?.keywords.multi_select.map((theme:any) => {
-            return '  - ' + theme.name + '\n'
-          }).toString().replace(/,/g, '') + '\n',
-          `--- \n\n`
-        )
-        for(let block of item.contents || []) {
-          item.fileMD = item.fileMD.concat(
-            await this.format_blocks(block.type || '', block) || ''
-          )
+
+    if(this.itemsToUpdate !== undefined) {
+      let index = 0
+      for(let result of this.itemsToUpdate.results || []) {
+        if(this.itemsToUpdate.items && "properties" in result) {
+            if("rich_text" in result.properties?.title
+            && "rich_text" in result.properties?.tagline
+            && "multi_select" in result.properties?.keywords
+            && "multi_select" in result.properties?.themes
+            && "select" in result.properties?.conditions_utilisation 
+            && "relation" in result.properties?.Producteur
+            && "select" in result.properties?.type
+            && "url" in result.properties?.documentation
+            && "url" in result.properties?.link
+            && "title" in result.properties?.Name) {
+            this.itemsToUpdate.items[index].fileMD = `--- \n`.concat(
+              `title: ` + ''.concat(... map(result.properties?.title.rich_text, 'plain_text')) + '\n',
+              `tagline: ${result.properties?.tagline.rich_text[0] ? ''.concat(... map(result.properties?.tagline.rich_text, 'plain_text')).replace(':', '') : ''} ` + '\n',
+              `kind: ` + '\n  - ' + result.properties?.type.select?.name + '\n',
+              `doc_tech_link: ${result.properties?.documentation.url ? result.properties?.documentation.url : ''}` + '\n',
+              `doc_tech_external: ${result.properties?.link.url ? result.properties?.link.url : ''}` + '\n',
+              `producer: ` + await this.notion.pages.retrieve({
+                page_id: result.properties?.Producteur.relation[0].id
+              }).then((producer) => {
+                if("properties" in producer && "title" in producer.properties.Name && "text" in producer.properties.Name.title[0])
+                return producer.properties.Name.title[0].text.content
+              }) + '\n',
+              `is_open:` + (result.properties?.conditions_utilisation.select?.name === 'Ouverte' ? ' 1' : result.properties?.conditions_utilisation.select?.name === 'Ouverte sur demande' ? ' 0' : ' -1') + '\n',
+              `themes: \n` + result.properties?.themes.multi_select.map((theme:any) => {
+                return '  - ' + theme.name + '\n'
+              }).toString().replace(/,/g, '') + '\n',
+              `keywords: \n` + result.properties?.keywords.multi_select.map((theme:any) => {
+                return '  - ' + theme.name + '\n'
+              }).toString().replace(/,/g, '') + '\n',
+              `--- \n\n`
+            )
+            for(let block of this.itemsToUpdate.items[index].contents || []) {
+              if("type" in block)
+              this.itemsToUpdate.items[index].fileMD = this.itemsToUpdate.items[index].fileMD?.concat(
+                await this.format_blocks(block.type || '', block) || ''
+              )
+            }
+            await this.write_file(`${''.concat(... map(result.properties?.Name.title, 'text.content'))}.md`.replace('/', '_'), this.itemsToUpdate.items[index].fileMD || '', '_data/api') 
+          }
+          index++
         }
-        await this.write_file(`${''.concat(... map(item.properties?.Name.title, 'text.content'))}.md`.replace('/', '_'), item.fileMD, '_data/api')
       }
     }
   }
@@ -244,39 +273,56 @@ export class ArticlesCms extends NotionCms {
   }
 
   construct_and_write_file = async () => {
-    if(this.itemsToUpdate) {
-      for(let item of this.itemsToUpdate?.items || []) {
-        item.fileMD = `--- \n`.concat(
-          `title: ` + item.properties?.title.rich_text[0].plain_text + '\n',
-          `tagline: ` + item.properties?.tagline.rich_text[0].plain_text + '\n',
-          `tags: ` + map(item.properties?.tags.multi_select, 'name') + '\n',
-          `image: ` + item.properties?.image.files[0].name + '\n',
-          `noindex: false # this page will appear on Google \n`,
-          `publish: true # this page will appear on /guides page \n`
-        )
-        if(item.properties?.related_ressources.relation[0]) {
-          item.fileMD = item.fileMD.concat(
-            `api: ` + await this.notion.pages.retrieve({
-              page_id: item.properties?.related_ressources.relation[0].id
-            }).then((producer) => {
-              return ` \n  - ` + producer.properties.Name.title[0].text.content
-            }) + '\n',
-            `--- \n\n`
-          )
-        } else {
-          item.fileMD = item.fileMD.concat(
-            `--- \n\n`
-          )
+
+    if(this.itemsToUpdate !== undefined) {
+      let index = 0
+      for(let result of this.itemsToUpdate.results || []) {
+        if(this.itemsToUpdate.items && "properties" in result) {
+            if("rich_text" in result.properties?.title
+            && "rich_text" in result.properties?.tagline
+            && "multi_select" in result.properties?.tags
+            && "relation" in result.properties?.related_ressources
+            && "files" in result.properties?.image
+            && "select" in result.properties?.type
+            && "files" in result.properties?.logo) {
+            this.itemsToUpdate.items[index].fileMD = `--- \n`.concat(
+              `title: ` + result.properties?.title.rich_text[0].plain_text + '\n',
+              `tagline: ` + result.properties?.tagline.rich_text[0].plain_text + '\n',
+              `tags: ` + map(result.properties?.tags.multi_select, 'name') + '\n',
+              `image: ` + result.properties?.image.files[0].name + '\n',
+              `noindex: false # this page will appear on Google \n`,
+              `publish: true # this page will appear on /guides page \n`
+            )
+            if(result.properties?.related_ressources.relation[0]) {
+              this.itemsToUpdate.items[index].fileMD = this.itemsToUpdate.items[index].fileMD?.concat(
+                `api: ` + await this.notion.pages.retrieve({
+                  page_id: result.properties?.related_ressources.relation[0].id
+                }).then((producer) => {
+                  if("properties" in producer && "title" in producer.properties.Name && "text" in producer.properties.Name.title[0])
+                  return ` \n  - ` + producer.properties.Name.title[0].text.content
+                }) + '\n',
+                `--- \n\n`
+              )
+            } else {
+              this.itemsToUpdate.items[index].fileMD = this.itemsToUpdate.items[index].fileMD?.concat(
+                `--- \n\n`
+              )
+            }
+            if("file" in result.properties?.image.files[0])
+            await this.fetch_and_write(result.properties?.image.files[0].file.url, `${result.properties?.image.files[0].name}`, 'public/images/guides', true)
+            let numberImage = 0
+            for(let block of this.itemsToUpdate.items[index].contents || []) {
+              if("type" in block && block.type === 'image')numberImage++
+              if("type" in block && "title" in result.properties?.Name && "text" in result.properties?.Name.title[0])
+              this.itemsToUpdate.items[index].fileMD = this.itemsToUpdate.items[index].fileMD?.concat(
+                await this.format_blocks(block.type || '', block, numberImage, result.properties?.Name.title[0].text.content.replace(/ /g,"_")) || ''
+              )
+            }
+            if("title" in result.properties?.Name && "text" in result.properties?.Name.title[0])
+            await this.write_file(`${result.properties?.Name.title[0].text.content}.md`, this.itemsToUpdate.items[index].fileMD || '', '_data/guides')
+          }
+          index++
         }
-        await this.fetch_and_write(item.properties?.image.files[0].file.url, `${item.properties?.image.files[0].name}`, 'public/images/guides', true)
-        let numberImage = 0
-        for(let block of item.contents || []) {
-          if(block.type === 'image')numberImage++
-          item.fileMD = item.fileMD.concat(
-            await this.format_blocks(block.type || '', block, numberImage, item.properties?.Name.title[0].text.content.replace(/ /g,"_")) || ''
-          )
-        }
-        await this.write_file(`${item.properties?.Name.title[0].text.content}.md`, item.fileMD, '_data/guides')
       }
     }
   }

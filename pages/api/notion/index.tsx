@@ -25,7 +25,7 @@ const get: NextApiHandler = async (req, res) => {
   const RessourcesConnector = new RessourcesCms( process.env.NOTION_RESSOURCES_BASE_ID || '')
   await RessourcesConnector.querry_items_and_content()
   await RessourcesConnector.construct_and_write_file()
-  await RessourcesConnector.update_need_pull()
+  //await RessourcesConnector.update_need_pull()
 
   const ArticlesConnector = new ArticlesCms( process.env.NOTION_ARTICLES_BASE_ID || '')
   await ArticlesConnector.querry_items_and_content()

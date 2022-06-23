@@ -18,12 +18,12 @@ keywords:
   - audit
 ---
 
-Dashlord est un tableau de bord des bonnes pratiques techniques.
+Dashlord est un tableau de bord regroupant les pratiques techniques, juridiques (cookies, mentions légales), d’accessibilité ainsi que des indicateurs de performance des startups d’Etat de la communauté Beta.gouv.
 
-DashLord est **100% open source**, vous pouvez y contribuer en créant de la documentation, en proposant du code, ou encore en partageant vos questions sur le repository github.
+DashLord est né à la [Fabrique des ministères sociaux](https://fabrique.social.gouv.fr/) pour répondre aux besoins d'évaluation et de mise en oeuvre des bonnes pratiques de développement web.
 
 L'objectif de DashLord est d'identifier des points d'attention mais aussi de proposer des solutions actionnables.
 
-DashLord est né à la Fabrique des ministères sociaux pour répondre aux besoins d'évaluation et de mise en oeuvre des bonnes pratiques de développement web.
+DashLord est **100% open source**, vous pouvez y contribuer en créant de la documentation, en proposant du code, ou encore en partageant vos questions [sur le repository github](https://github.com/socialgouv/dashlord).
 
-Vous pouvez facilement créer votre propre DashLord pour vos URLs en suivant les instructions sur le GitHub.
+Vous pouvez facilement créer votre propre DashLord pour vos URLs en suivant [les instructions sur le GitHub](https://github.com/SocialGouv/dashlord/blob/main/README.md).
