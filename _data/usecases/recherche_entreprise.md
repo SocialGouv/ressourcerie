@@ -6,14 +6,14 @@ image: recherche_entreprise.jpeg
 noindex: false # this page will appear on Google
 publish: true # this page will appear on /guides page
 related_ressources:
-  - api-recherche-entreprise
-  - api-entreprise
-  - api-sirene-donnees-ouvertes
-  - api-conventions-collectives
-  - codes-naf
+  - API recherche-entreprise
+  - API Entreprise
+  - API Sirene
+  - API Convention collectives
+  - Liste des codes NAF
 related_guides:
-  - recherche_entreprise
-  - api-definition
+  - Recherche entreprise
+  - API définition
 ---
 
 Responsable technique, développeuse, développeur, vous travaillez sur un projet numérique dans l’administration à destination de personnes salariées, de syndicats, d’entreprises, ou d’autres administrations et vous avez besoin d’exploiter les données disponibles sur les entreprises françaises ? Des outils techniques sont à votre disposition pour vous faciliter la vie ! Découvrez ce qui vous convient le mieux en fonction de vos besoins.
