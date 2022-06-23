@@ -1,3 +1,10 @@
+## [1.15.5](https://github.com/SocialGouv/ressourcerie/compare/v1.15.4...v1.15.5) (2022-06-23)
+
+
+### Bug Fixes
+
+* fix display buttons links ressources ([#75](https://github.com/SocialGouv/ressourcerie/issues/75)) ([7939ae5](https://github.com/SocialGouv/ressourcerie/commit/7939ae5f465ac4bced47427642293902f7e8cd5a))
+
 ## [1.15.4](https://github.com/SocialGouv/ressourcerie/compare/v1.15.3...v1.15.4) (2022-06-23)
 
 
