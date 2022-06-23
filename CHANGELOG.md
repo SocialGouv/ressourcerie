@@ -1,3 +1,10 @@
+## [1.15.3](https://github.com/SocialGouv/ressourcerie/compare/v1.15.2...v1.15.3) (2022-06-23)
+
+
+### Bug Fixes
+
+* fix ressources images ([#73](https://github.com/SocialGouv/ressourcerie/issues/73)) ([b9815be](https://github.com/SocialGouv/ressourcerie/commit/b9815beef5a736a36ff065a5a6a59528921817a1))
+
 ## [1.15.2](https://github.com/SocialGouv/ressourcerie/compare/v1.15.1...v1.15.2) (2022-06-23)
 
 
