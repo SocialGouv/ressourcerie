@@ -6,10 +6,10 @@ image: pseudonymisation2.jpeg
 noindex: false # this page will appear on Google
 publish: true # this page will appear on /guides page
 related_ressources:
-  - guide_pseudonymisation
-  - modeles_apprentissage
+  - Pseudonymiser des documents grâce à l'IA
+  - Inventaire des modèles pré-entraînés d’apprentissage du Lab IA d'Etalab
 related_guides:
-  - accord_entreprises
+  - Accords entreprise
 ---
 
 Il est très courant d’avoir à rendre publics des documents administratifs qui contiennent des données personnelles. Pour protéger la vie privée des personnes mentionnées, il est nécessaire de retirer leurs informations personnelles (obligation prévue notamment à [l’article L.312-1-2](https://www.legifrance.gouv.fr/affichCodeArticle.do?idArticle=LEGIARTI000033205514&cidTexte=LEGITEXT000031366350&dateTexte=20161009) du Code des relations entre le public et l’administration).
