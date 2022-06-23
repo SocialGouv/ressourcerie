@@ -41,6 +41,8 @@ const Access: React.FC<IAccessProps> = ({
   let accessDescription = '';
   let accessHref = '';
   let accessLabel = <></>;
+  let accessHref2 = '';
+  let accessLabel2 = <></>;
   let ext = false; // external link ?
 
   if (!doc_swagger_link && !doc_external_link) {
@@ -52,16 +54,24 @@ const Access: React.FC<IAccessProps> = ({
   switch (is_open) {
     case 1:
       accessDescription = DESCRIPTIONS.open;
-      accessHref = doc_swagger_link
-        ? `/documentation/${slug}`
-        : doc_external_link;
+      accessHref = doc_external_link;
       accessLabel = (
         <AccessButton
           emoji="👩‍💻"
           emojiLabel="code"
-          label={doc_swagger_link ? 'Tester la ressource' : 'Accéder au site de la ressource'}
+          label={'Accéder au site de la ressource'}
         />
       );
+      accessHref2 = doc_swagger_link;
+      accessLabel2 = (
+        <AccessButton
+          emoji="👩‍💻"
+          emojiLabel="code"
+          label={'Tester la ressource'}
+        />
+      );
+      console.log('1 : ', accessHref)
+      console.log('2 : ', accessHref2)
       break;
     case 0:
       accessDescription = DESCRIPTIONS.account;
@@ -94,15 +104,28 @@ const Access: React.FC<IAccessProps> = ({
     <SubSection title="Accéder à la ressource">
       <div>{accessDescription}</div>
       <div className="layout-right vertical-margin">
+        {doc_external_link !== null &&
           <ButtonLink
           href={accessHref}
-          onClick={logDemanderAcces}
           size="large"
           target={ext ? '_blank' : ''}
           rel={ext ? 'noreferrer noopener' : ''}
         >
           {accessLabel}
         </ButtonLink>
+        }
+      </div>
+      <div className="layout-right vertical-margin">
+      {doc_swagger_link !== null &&
+        <ButtonLink
+          href={accessHref2}
+          size="large"
+          target={ext ? '_blank' : ''}
+          rel={ext ? 'noreferrer noopener' : ''}
+        >
+          {accessLabel2}
+        </ButtonLink>
+      }
       </div>
     </SubSection>
   );
