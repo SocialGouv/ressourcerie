@@ -34,7 +34,7 @@ const get: NextApiHandler = async (req, res) => {
     await ArticlesConnector.construct_and_write_file()
     await ArticlesConnector.update_need_pull()
   
-    const UsecaseConnector = new UsecaseCms( process.env.NOTION_ARTICLES_BASE_ID || '')
+    const UsecaseConnector = new UsecaseCms( process.env.NOTION_USECASES_BASE_ID || '')
     await UsecaseConnector.querry_items_and_content()
     await UsecaseConnector.construct_and_write_file()
     await UsecaseConnector.update_need_pull()
@@ -42,7 +42,7 @@ const get: NextApiHandler = async (req, res) => {
     res.status(200).json({ itemsToUpdate: UsecaseConnector.get_items_to_update() });
 
   } catch(e) {
-    res.status(500).json({e})
+    res.status(500).json(e)
   }
 }
 
