@@ -1,5 +1,5 @@
 ---
-title: Le 25 mars 2022 s’est tenu un événement organisé par la Fabrique des ministères sociaux dans les locaux du ministère du Travail, de l’Emploi et de l’Insertion.
+title: Rencontre de la ministre du Travail avec la Fabrique des ministères sociaux
 tagline: Compte rendu de l’événnement de la rencontre entre la Fabrique des ministères sociaux et de la ministre du Travail, de l’Emploi et de l’Insertion ainsi que la ministre de la Transformation publique.
 tags: DNUM,numérique,travail
 image: Untitled.png
