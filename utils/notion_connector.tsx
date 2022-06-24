@@ -53,6 +53,7 @@ export class NotionCms {
           }
       }
     })
+    console.log('result : ', items.results)
     itemsToUpdate.results = items.results
     return itemsToUpdate
   }
@@ -74,6 +75,7 @@ export class NotionCms {
           }
         }
         this.set_items_to_update(itemsToUpdate)
+        console.log('items to update : ', this.itemsToUpdate)
         return itemsToUpdate
       }
   }
@@ -282,9 +284,7 @@ export class ArticlesCms extends NotionCms {
             && "rich_text" in result.properties?.tagline
             && "multi_select" in result.properties?.tags
             && "relation" in result.properties?.related_ressources
-            && "files" in result.properties?.image
-            && "select" in result.properties?.type
-            && "files" in result.properties?.logo) {
+            && "files" in result.properties?.image) {
             this.itemsToUpdate.items[index].fileMD = `--- \n`.concat(
               `title: ` + result.properties?.title.rich_text[0].plain_text + '\n',
               `tagline: ` + result.properties?.tagline.rich_text[0].plain_text + '\n',
@@ -346,9 +346,7 @@ export class UsecaseCms extends NotionCms {
             && "rich_text" in result.properties?.tagline
             && "multi_select" in result.properties?.tags
             && "relation" in result.properties?.related_ressources
-            && "files" in result.properties?.image
-            && "select" in result.properties?.type
-            && "files" in result.properties?.logo) {
+            && "files" in result.properties?.image) {
             this.itemsToUpdate.items[index].fileMD = `--- \n`.concat(
               `title: ` + result.properties?.title.rich_text[0].plain_text + '\n',
               `tagline: ` + result.properties?.tagline.rich_text[0].plain_text + '\n',

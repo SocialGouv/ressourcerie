@@ -7,7 +7,7 @@ noindex: false # this page will appear on Google
 publish: true # this page will appear on /guides page
 ---
 
-## Les accidents du travail en France
+## **Les accidents du travail en France**
 
 En 2020, plus de **540 000 accidents** du travail, dont 550 mortels, ont été recensés en France. Les accidents du travail sont donc une préoccupation de taille pour le ministère du Travail, de l'Emploi et de l'Insertion (MTEI).
 
@@ -49,9 +49,11 @@ Les inspecteurs peuvent désormais voir l’évolution des accidents de travail 
 
 Pour répondre au problème de la qualification des causes à partir des déclarations CERFA, le BVDD a par ailleurs mis en place un algorithme d’attribution des causes à partir de l’analyse des déclarations.
 
-La difficulté technique réside dans les données, inscrites en texte libre, par une pluralité de déclarants. Ce type données est difficile à traiter automatiquement, et nécessite des techniques de traitement automatisé du langage (natural language processing en anglais). Pour ce faire, les causes d’AT ont été réduites à 12 et un modèle d’intelligence artificielle a été entraîné sur les données passées.
+La difficulté technique réside dans les données, inscrites en texte libre, par une pluralité de déclarants. Ce type données est difficile à traiter automatiquement, et nécessite des techniques de [traitement automatisé du langage](https://ressourcerie.fabrique.social.gouv.fr/articles/IA-art) (natural language processing en anglais). Pour ce faire, les causes d’AT ont été réduites à 12 et un modèle d’intelligence artificielle a été entraîné sur les données passées.
 
 Les causes sont ensuite vérifiées manuellement par les agents. Le cas échéant, elles sont corrigées, ce qui permet d’améliorer le modèle d’intelligence artificielle.
+
+### **\*“On essaie d’aller un peu plus loin que le tableau de bord.” confie \*\*\***Xavier Béchade, directeur de projets à la DNUM\*\*
 
 **Des perspectives encourageantes **
 

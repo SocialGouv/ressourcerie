@@ -39,9 +39,15 @@ const get: NextApiHandler = async (req, res) => {
     await UsecaseConnector.construct_and_write_file()
     await UsecaseConnector.update_need_pull()
 
-    res.status(200).json({ itemsToUpdate: UsecaseConnector.get_items_to_update() });
+    res.status(200).json({ itemsUpdated: {
+      producteurs : ProducteursConnector.get_items_to_update(),
+      ressources : RessourcesConnector.get_items_to_update(),
+      articles : ArticlesConnector.get_items_to_update(),
+      usecases : UsecaseConnector.get_items_to_update(),
+    } });
 
   } catch(e) {
+    console.log(e)
     res.status(500).json(e)
   }
 }
