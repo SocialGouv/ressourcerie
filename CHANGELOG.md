@@ -1,3 +1,10 @@
+# [1.16.0](https://github.com/SocialGouv/ressourcerie/compare/v1.15.6...v1.16.0) (2022-06-24)
+
+
+### Features
+
+* add usecases to cms ([#77](https://github.com/SocialGouv/ressourcerie/issues/77)) ([217c97f](https://github.com/SocialGouv/ressourcerie/commit/217c97f77b98e5e45aa0315579fae29176a97172))
+
 ## [1.15.6](https://github.com/SocialGouv/ressourcerie/compare/v1.15.5...v1.15.6) (2022-06-23)
 
 
