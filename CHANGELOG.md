@@ -1,3 +1,10 @@
+## [1.16.1](https://github.com/SocialGouv/ressourcerie/compare/v1.16.0...v1.16.1) (2022-06-24)
+
+
+### Bug Fixes
+
+* finished usecase CMS ([#78](https://github.com/SocialGouv/ressourcerie/issues/78)) ([bd18353](https://github.com/SocialGouv/ressourcerie/commit/bd183530432d9eacc03b23ed7369a8e7ce44e113))
+
 # [1.16.0](https://github.com/SocialGouv/ressourcerie/compare/v1.15.6...v1.16.0) (2022-06-24)
 
 
