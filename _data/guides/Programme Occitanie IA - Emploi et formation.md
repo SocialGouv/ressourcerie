@@ -1,10 +1,10 @@
---- 
-title: La Région Occitanie met l’intelligence artificielle au service des demandeurs d’emploi 
-tagline: Faciliter la recherche d’emploi et de formation sur-mesure : voici l’objectif du programme Occitanie IA
+---
+title: La Région Occitanie met l’intelligence artificielle au service des demandeurs d’emploi
+tagline: Faciliter la recherche d’emploi et de formation sur-mesure, voici l’objectif du programme Occitanie IA
 tags: data,travail,algorithme,formation
 image: monParcoursFormation.jpg
-noindex: false # this page will appear on Google 
-publish: true # this page will appear on /guides page 
+noindex: false # this page will appear on Google
+publish: true # this page will appear on /guides page
 ---
 
 La Région Occitanie développe depuis trois ans des outils numériques pour adapter les formations aux besoins des employeurs et faciliter l’insertion des personnes en demande d’emploi.
@@ -38,10 +38,10 @@ Après avoir créé son profil en répondant à un questionnaire où il est poss
 
 ## Son fonctionnement
 
+La plateforme s’appuie sur trois algorithmes : un algorithme d’IA détecte les compétences dans les offres d’emplois, un autre algorithme détecte les compétences à partir du questionnaire et des CV, un dernier réalise le matching (appariement) entre les compétences de l’utilisateurs et celles demandées par les employeurs. Il permettra de visualiser rapidement les 10 métiers qui correspondent le mieux avec les compétences du profil ainsi que les offres d’emploi et de formation associées à ces métiers.
+
 ![Image](/images/guides/Programme_Occitanie_IA_-_Emploi_et_formation_2.png)
 _Les 10 métiers correspondant le mieux à un profil créé à partir du questionnaire et du CV sur le site de Mon Parcours Formation Métiers_
-
-La plateforme s’appuie sur trois algorithmes : un algorithme d’IA détecte les compétences dans les offres d’emplois, un autre algorithme détecte les compétences à partir du questionnaire et des CV, un dernier réalise le matching (appariement) entre les compétences de l’utilisateurs et celles demandées par les employeurs. Il permettra de visualiser rapidement les 10 métiers qui correspondent le mieux avec les compétences du profil ainsi que les offres d’emploi et de formation associées à ces métiers.
 
 ## Volonté de mutualiser
 

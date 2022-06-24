@@ -37,7 +37,7 @@ const get: NextApiHandler = async (req, res) => {
     const UsecaseConnector = new UsecaseCms( process.env.NOTION_USECASES_BASE_ID || '')
     await UsecaseConnector.querry_items_and_content()
     await UsecaseConnector.construct_and_write_file()
-    await UsecaseConnector.update_need_pull()
+    //await UsecaseConnector.update_need_pull()
 
     res.status(200).json({ itemsUpdated: {
       producteurs : ProducteursConnector.get_items_to_update(),

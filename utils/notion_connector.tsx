@@ -1,6 +1,6 @@
 import { Client } from '@notionhq/client';
 import { ListBlockChildrenResponse, QueryDatabaseResponse } from '@notionhq/client/build/src/api-endpoints';
-import { map } from 'lodash';
+import { map, result } from 'lodash';
 import fs from "fs";
 import fetch from "node-fetch";
 
@@ -53,7 +53,6 @@ export class NotionCms {
           }
       }
     })
-    console.log('result : ', items.results)
     itemsToUpdate.results = items.results
     return itemsToUpdate
   }
@@ -126,6 +125,8 @@ export class NotionCms {
         return '### ' + await this.format_sentence(block[`${blockType}`].rich_text) + ' \n\n'
       case 'bulleted_list_item': 
         return '* ' + await this.format_sentence(block[`${blockType}`].rich_text) + ' \n'
+      case 'numbered_list_item': 
+        return '1.' + await this.format_sentence(block[`${blockType}`].rich_text) + ' \n'
       case 'quote': 
         return '> ' + await this.format_sentence(block[`${blockType}`].rich_text) + ' \n\n'
       case 'image': 
@@ -137,6 +138,32 @@ export class NotionCms {
         return `![Image](/images/guides/${name}_${numberImage}.png)` + ' \n'
       case 'paragraph':
         return '' + await this.format_sentence(block[`${blockType}`].rich_text) + ' \n'
+    }
+  }
+
+  add_related = async (indexItem: number, name_prop: string, name_md: string) => {
+    if(this.itemsToUpdate?.results && this.itemsToUpdate?.items) {
+      let item = this.itemsToUpdate?.results[indexItem]
+      this.itemsToUpdate.items[indexItem].fileMD = this.itemsToUpdate.items[indexItem].fileMD?.concat(
+        `${name_md}: `
+      )
+      let result = this.itemsToUpdate?.results[indexItem]
+      if("properties" in result && "relation" in result.properties[name_prop]) {
+        let relations = result.properties[name_prop]
+        if("relation" in relations) {
+          for(let relation of relations.relation) {
+            this.itemsToUpdate.items[indexItem].fileMD = this.itemsToUpdate.items[indexItem].fileMD?.concat( 
+              await this.notion.pages.retrieve({
+                page_id: relation.id
+              }).then((relative) => {
+                if("properties" in relative && "title" in relative.properties.Name && "text" in relative.properties.Name.title[0])
+                return ` \n  - ` + relative.properties.Name.title[0].text.content
+              }) + '',
+            )
+          }
+          this.itemsToUpdate.items[indexItem].fileMD = this.itemsToUpdate.items[indexItem].fileMD?.concat(`\n`)
+        }
+      }
     }
   }
 
@@ -346,6 +373,7 @@ export class UsecaseCms extends NotionCms {
             && "rich_text" in result.properties?.tagline
             && "multi_select" in result.properties?.tags
             && "relation" in result.properties?.related_ressources
+            && "relation" in result.properties?.related_guides
             && "files" in result.properties?.image) {
             this.itemsToUpdate.items[index].fileMD = `--- \n`.concat(
               `title: ` + result.properties?.title.rich_text[0].plain_text + '\n',
@@ -356,22 +384,17 @@ export class UsecaseCms extends NotionCms {
               `publish: true # this page will appear on /guides page \n`
             )
             if(result.properties?.related_ressources.relation[0]) {
-              this.itemsToUpdate.items[index].fileMD = this.itemsToUpdate.items[index].fileMD?.concat(
-                `related_ressources: ` + await this.notion.pages.retrieve({
-                  page_id: result.properties?.related_ressources.relation[0].id
-                }).then((producer) => {
-                  if("properties" in producer && "title" in producer.properties.Name && "text" in producer.properties.Name.title[0])
-                  return ` \n  - ` + producer.properties.Name.title[0].text.content
-                }) + '\n',
-                `--- \n\n`
-              )
-            } else {
-              this.itemsToUpdate.items[index].fileMD = this.itemsToUpdate.items[index].fileMD?.concat(
-                `--- \n\n`
-              )
+              await this.add_related(index, 'related_ressources', 'related_ressources')
             }
+            if(result.properties?.related_guides.relation[0]) {
+              await this.add_related(index, 'related_guides', 'related_guides')
+            }
+            this.itemsToUpdate.items[index].fileMD = this.itemsToUpdate.items[index].fileMD?.concat(
+              `--- \n\n`
+            )
+            
             if("file" in result.properties?.image.files[0])
-            await this.fetch_and_write(result.properties?.image.files[0].file.url, `${result.properties?.image.files[0].name}`, 'public/images/usecases', true)
+            await this.fetch_and_write(result.properties?.image.files[0].file.url, `${result.properties?.image.files[0].name}`, 'public/images/usecases', false)
             let numberImage = 0
             for(let block of this.itemsToUpdate.items[index].contents || []) {
               if("type" in block && block.type === 'image')numberImage++
