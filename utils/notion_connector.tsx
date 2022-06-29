@@ -321,20 +321,11 @@ export class ArticlesCms extends NotionCms {
               `publish: true # this page will appear on /guides page \n`
             )
             if(result.properties?.related_ressources.relation[0]) {
-              this.itemsToUpdate.items[index].fileMD = this.itemsToUpdate.items[index].fileMD?.concat(
-                `api: ` + await this.notion.pages.retrieve({
-                  page_id: result.properties?.related_ressources.relation[0].id
-                }).then((producer) => {
-                  if("properties" in producer && "title" in producer.properties.Name && "text" in producer.properties.Name.title[0])
-                  return ` \n  - ` + producer.properties.Name.title[0].text.content
-                }) + '\n',
-                `--- \n\n`
-              )
-            } else {
-              this.itemsToUpdate.items[index].fileMD = this.itemsToUpdate.items[index].fileMD?.concat(
-                `--- \n\n`
-              )
+              await this.add_related(index, 'related_ressources', 'api')
             }
+            this.itemsToUpdate.items[index].fileMD = this.itemsToUpdate.items[index].fileMD?.concat(
+              `--- \n\n`
+            )
             if("file" in result.properties?.image.files[0])
             await this.fetch_and_write(result.properties?.image.files[0].file.url, `${result.properties?.image.files[0].name}`, 'public/images/guides', true)
             let numberImage = 0
