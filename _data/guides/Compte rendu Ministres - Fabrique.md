@@ -2,7 +2,7 @@
 title: Rencontre de la ministre du Travail avec la Fabrique des ministères sociaux
 tagline: Compte rendu de l’événnement de la rencontre entre la Fabrique des ministères sociaux et de la ministre du Travail, de l’Emploi et de l’Insertion ainsi que la ministre de la Transformation publique.
 tags: DNUM,numérique,travail
-image: Untitled.png
+image: Rencontre_ministre.png
 noindex: false # this page will appear on Google
 publish: true # this page will appear on /guides page
 ---
