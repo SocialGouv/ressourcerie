@@ -1,3 +1,10 @@
+## [1.16.4](https://github.com/SocialGouv/ressourcerie/compare/v1.16.3...v1.16.4) (2022-06-30)
+
+
+### Bug Fixes
+
+* try fix build error ([#81](https://github.com/SocialGouv/ressourcerie/issues/81)) ([480c3cb](https://github.com/SocialGouv/ressourcerie/commit/480c3cb245b13088c6f260f6b5581b72bc600e61))
+
 ## [1.16.3](https://github.com/SocialGouv/ressourcerie/compare/v1.16.2...v1.16.3) (2022-06-30)
 
 
