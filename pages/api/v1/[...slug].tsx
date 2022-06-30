@@ -62,7 +62,7 @@ export default async function handler(
     query: { slug },
   } = req;
 
-  if (!slug.length || ['apis', 'proxy'].indexOf(slug[0]) === -1) {
+  if (!slug || !slug.length || ['apis', 'proxy'].indexOf(slug[0]) === -1) {
     res.statusCode = 404;
     return res.send({ Error: 'Route does not exist' });
   }
