@@ -1,16 +1,16 @@
 ---
 title: Intégrer et traiter automatiquement des données sur les entreprises dans mon produit
 tagline: Les API pour récupérer les données publiques sur les entreprises et leurs différents usages
-tags: IA, algorithme
-image: recherche_entreprise.jpeg
+tags:
+image: recherche_entreprise_usecase.jpeg
 noindex: false # this page will appear on Google
 publish: true # this page will appear on /guides page
 related_ressources:
   - API recherche-entreprise
   - API Entreprise
   - API Sirene
-  - API Convention collectives
   - Liste des codes NAF
+  - API Convention collectives
 related_guides:
   - Recherche entreprise
   - API définition
@@ -22,13 +22,13 @@ Responsable technique, développeuse, développeur, vous travaillez sur un proje
 
 L’administration française collecte et traite beaucoup d’informations sur les entreprises.
 
-**Une partie est disponible à tout le monde,** notamment les données contenues dans la base SIRENE de l’Insee (numéro de SIRET, date de création de l’entreprise, siège social, etc.). Une version géocodée de cette base est également disponible. Ce sont ces données qui sont disponibles dans les extraits KBIS des entreprises.
+**Une partie est disponible à tout le monde, **notamment les données contenues dans la base SIRENE de l’Insee (numéro de SIRET, date de création de l’entreprise, siège social, etc.). Une version géocodée de cette base est également disponible. Ce sont ces données qui sont disponibles dans les extraits KBIS des entreprises.
 
 Sont également disponibles par exemple [la liste des conventions collectives](https://www.data.gouv.fr/fr/datasets/liste-des-conventions-collectives-par-entreprise-siret/#_) associées à chaque entreprise.
 
 ▶️  Voir une liste de toutes les données ouvertes dans la catégorie “Ressources” de cette page.
 
-**D’autres informations ne sont disponibles que pour un partage interne entre différents services de l’administration.** Par exemple, des informations financières et des données fiscales (DGFiP), des données concernant l’URSSAF ou l’INPI (voir une liste détaillée d’un grand nombre de ces données [ici](https://entreprise.api.gouv.fr/catalogue/)). L’accès à ces données par d’autres administrations est clairement encadré et dépend entre autres de l’utilisation qui va en être faite.
+**D’autres informations ne sont disponibles que pour un partage interne entre différents services de l’administration. **Par exemple, des informations financières et des données fiscales (DGFiP), des données concernant l’URSSAF ou l’INPI (voir une liste détaillée d’un grand nombre de ces données [ici](https://entreprise.api.gouv.fr/catalogue/)). L’accès à ces données par d’autres administrations est clairement encadré et dépend entre autres de l’utilisation qui va en être faite.
 
 ## Des API, pour récupérer automatique ces informations : quelques cas d’usages
 
@@ -42,7 +42,7 @@ En résumé, vous pouvez, grâce aux API, rendre votre service public plus simpl
 
 Différents services de l’administration ont développé des API qui peuvent être utilisées pour récupérer ces informations et les utiliser dans un projet numérique. Utiliser une API existante va vous permettre d’économiser des heures de développement. Vous pouvez même contribuer à améliorer l’outil, dans une démarche de mutualisation des ressources.
 
-**Le choix de votre API va dépendre de l’utilisateur-cible de votre outils.**
+**Le choix de votre API va dépendre de l’utilisateur-cible de votre outils. **
 
 ## Je développe un produit pour des administrations : l’API Entreprise
 
@@ -58,7 +58,7 @@ L’API Recherche Entreprise permet de récupérer un nombre réduit de catégor
 
 C’est cette API qui permet à toute personne salariée de trouver facilement sa convention collective (cas d’usage mentionné ci-dessus).
 
-▶️  Vous pouvez découvrir cette API avec [une démo visuelle en ligne](https://recherche-entreprises.fabrique.social.gouv.fr/) ainsi qu’une [API de démonstration](https://api.recherche-entreprises.fabrique.social.gouv.fr/).
+▶️  Vous pouvez découvrir cette API avec [une démo visuelle en ligne](https://recherche-entreprises.fabrique.social.gouv.fr/) ainsi qu’une[ API de démonstration](https://api.recherche-entreprises.fabrique.social.gouv.fr/).
 
 ▶️  Vous pouvez découvrir l’histoire de cette API dans un article de la Ressourcerie.
 
