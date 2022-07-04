@@ -53,7 +53,7 @@ La difficulté technique réside dans les données, inscrites en texte libre, pa
 
 Les causes sont ensuite vérifiées manuellement par les agents. Le cas échéant, elles sont corrigées, ce qui permet d’améliorer le modèle d’intelligence artificielle.
 
-### **\*“On essaie d’aller un peu plus loin que le tableau de bord.” confie \*\*\***Xavier Béchade, directeur de projets à la DNUM\*\*
+### **“On essaie d’aller un peu plus loin que le tableau de bord.” confie Xavier Béchade, directeur de projets à la DNUM**
 
 **Des perspectives encourageantes **
 
