@@ -21,4 +21,6 @@ L'API Conventions collectives permet de rechercher les conventions collectives d
 
 **À quoi sert l’API Conventions collectives ?**
 
-Chaque entreprise applique des conventions collectives propres à son secteur d'activité (contrat de travail, congés, salaires, hygiène, licenciement, etc...). Conclues par les organisations syndicales et les groupements d'employeurs, elles varient selon le secteur d'activité et donc selon les entreprises. Cette API permet d'associer une entreprise à des conventions collectives.
+Chaque entreprise applique des [conventions collectives propres à son secteur d'activité](https://www.service-public.fr/particuliers/vosdroits/F78) (contrat de travail, congés, salaires, hygiène, licenciement, etc...). Conclues par les organisations syndicales et les groupements d'employeurs, elles varient selon le secteur d'activité et donc selon les entreprises. Cette API permet d'associer une entreprise à des conventions collectives.
+
+**Quelles sont les données contenues dans l'API Conventions collectives ?**
