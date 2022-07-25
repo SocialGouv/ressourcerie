@@ -30,7 +30,7 @@ Lorsque les data scientists ou les analystes de données manipulent des données
 
 C’est là qu’interviennent les tableaux de bord. Ils vont permettre de **mettre en forme et de restituer toutes les données importantes.**
 
-On peut passer alors d’une base de donnée brute (à gauche) à un tableau de bord (à droite) beaucoup plus compréhensible.
+On peut passer alors d’une base de données brutes (à gauche) à un tableau de bord (à droite) beaucoup plus compréhensible.
 
 ![Image](/images/guides/Tableau_de_bord_4.png)
 ![Image](/images/guides/Tableau_de_bord_5.png)
