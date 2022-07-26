@@ -278,10 +278,12 @@ export class RessourcesCms extends NotionCms {
               }).toString().replace(/,/g, '') + '\n',
               `--- \n\n`
             )
+            let numberImage = 0
             for(let block of this.itemsToUpdate.items[index].contents || []) {
-              if("type" in block)
+              if("type" in block && block.type === 'image')numberImage++
+              if("type" in block && "title" in result.properties?.Name && "text" in result.properties?.Name.title[0])
               this.itemsToUpdate.items[index].fileMD = this.itemsToUpdate.items[index].fileMD?.concat(
-                await this.format_blocks(block.type || '', block) || ''
+                await this.format_blocks(block.type || '', block, numberImage, result.properties?.Name.title[0].text.content.replace(/ /g,"_")) || ''
               )
             }
             await this.write_file(`${''.concat(... map(result.properties?.Name.title, 'text.content'))}.md`.replace('/', '_'), this.itemsToUpdate.items[index].fileMD || '', '_data/api') 
