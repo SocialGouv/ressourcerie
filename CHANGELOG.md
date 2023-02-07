@@ -1,3 +1,10 @@
+## [1.16.10](https://github.com/SocialGouv/ressourcerie/compare/v1.16.9...v1.16.10) (2023-02-07)
+
+
+### Bug Fixes
+
+* **k8s:** ingress annotations ([#94](https://github.com/SocialGouv/ressourcerie/issues/94)) ([a2d0a73](https://github.com/SocialGouv/ressourcerie/commit/a2d0a731b9355250bdfc35d69763abee5e83bb2e))
+
 ## [1.16.9](https://github.com/SocialGouv/ressourcerie/compare/v1.16.8...v1.16.9) (2022-07-26)
 
 
