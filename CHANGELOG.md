@@ -1,3 +1,10 @@
+## [1.16.11](https://github.com/SocialGouv/ressourcerie/compare/v1.16.10...v1.16.11) (2023-02-07)
+
+
+### Bug Fixes
+
+* csp ([#97](https://github.com/SocialGouv/ressourcerie/issues/97)) ([93a1bb2](https://github.com/SocialGouv/ressourcerie/commit/93a1bb2f4b19c6c3931b440a6e4f6a8d44313587))
+
 ## [1.16.10](https://github.com/SocialGouv/ressourcerie/compare/v1.16.9...v1.16.10) (2023-02-07)
 
 
