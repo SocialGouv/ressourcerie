@@ -1,3 +1,10 @@
+## [1.16.12](https://github.com/SocialGouv/ressourcerie/compare/v1.16.11...v1.16.12) (2023-03-13)
+
+
+### Bug Fixes
+
+* release ([9f13bfd](https://github.com/SocialGouv/ressourcerie/commit/9f13bfd6514d4c2c197cadc4b06c856813f4165b))
+
 ## [1.16.11](https://github.com/SocialGouv/ressourcerie/compare/v1.16.10...v1.16.11) (2023-02-07)
 
 
