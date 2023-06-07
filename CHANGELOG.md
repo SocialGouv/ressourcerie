@@ -1,3 +1,10 @@
+## [1.16.13](https://github.com/SocialGouv/ressourcerie/compare/v1.16.12...v1.16.13) (2023-06-07)
+
+
+### Bug Fixes
+
+* **docker:** use alpine ([#99](https://github.com/SocialGouv/ressourcerie/issues/99)) ([ac1ace3](https://github.com/SocialGouv/ressourcerie/commit/ac1ace3e8a8edc1d75bd21a3f826ca59bcbf51ba))
+
 ## [1.16.12](https://github.com/SocialGouv/ressourcerie/compare/v1.16.11...v1.16.12) (2023-03-13)
 
 
