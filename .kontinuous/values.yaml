@@ -1,5 +1,5 @@
 app:
-  enabled: true
+  containerPort: 3000
   env:
     - name: APP_BASE_URL
       value: 'https://{{ $.Values.global.host }}'
@@ -10,7 +10,6 @@ app:
         name: app-configmap
   probesPath: /healthz
   replicas: 1
-  imagePackage: app
   ingress:
     annotations:
       nginx.ingress.kubernetes.io/configuration-snippet: |
