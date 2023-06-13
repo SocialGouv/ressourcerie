@@ -1,3 +1,11 @@
+# [1.17.0](https://github.com/SocialGouv/ressourcerie/compare/v1.16.13...v1.17.0) (2023-06-13)
+
+
+### Features
+
+* ci on kontinuous ([d8bb15d](https://github.com/SocialGouv/ressourcerie/commit/d8bb15d759fc7bcd2196e5e4a2b5a3be50cf413b))
+* ci on kontinuous ([58b6a5c](https://github.com/SocialGouv/ressourcerie/commit/58b6a5ccbcbc83f497b1ce8f50279c33e1e9ea24))
+
 ## [1.16.13](https://github.com/SocialGouv/ressourcerie/compare/v1.16.12...v1.16.13) (2023-06-07)
 
 
