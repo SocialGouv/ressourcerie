@@ -1,3 +1,4 @@
+ciNamespace: ci-ressourcerie
 
 dependencies:
   fabrique:
