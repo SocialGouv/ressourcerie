@@ -1,5 +1,9 @@
 app:
   containerPort: 3000
+  securityContext:
+    fsGroup: 1001
+    runAsGroup: 1001
+    runAsUser: 1001
   env:
     - name: APP_BASE_URL
       value: 'https://{{ $.Values.global.host }}'
