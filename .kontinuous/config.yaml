@@ -3,5 +3,4 @@ ciNamespace: ci-ressourcerie
 dependencies:
   fabrique:
     extends:
-    - name: ovh
-      ifEnv: [dev,preprod]
+      - name: ovh
