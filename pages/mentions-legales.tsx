@@ -31,7 +31,7 @@ const About: React.FC = () => (
         <h2>Hébergement du site</h2>
         <p>
           Ce site est hébergé par : <br />
-          [http://www.ovh.com](http://www.ovh.com/) OVH SAS
+          [https://www.ovh.com](https://www.ovh.com/) OVH SAS
           <br />
           Siège social : 2 rue Kellermann - 59100 Roubaix - France. <br />
         </p>
@@ -58,8 +58,8 @@ const About: React.FC = () => (
           En savoir plus : <br />
           Pour en savoir plus sur la politique d’accessibilité numérique de
           l’État : 
-          <a href="http://references.modernisation.gouv.fr/accessibilite-numerique">
-            http://references.modernisation.gouv.fr/accessibilite-numerique
+          <a href="https://references.modernisation.gouv.fr/accessibilite-numerique">
+            https://references.modernisation.gouv.fr/accessibilite-numerique
           </a>
         </p>
 
