@@ -2,6 +2,13 @@ ARG NODE_VERSION=lts-alpine3.18@sha256:c8245ebe9d86862ab40bbaee04f69f9787c57b83b
 FROM node:$NODE_VERSION AS base
 WORKDIR /app
 ENV NODE_ENV production
+
+# needed for node alpine
+RUN chown -R 1000:1000 /home/node && \
+  chmod -R 755 /home/node && \
+  chown 1000:1000 /tmp && \
+  chmod 1777 /tmp
+
 USER 1000
 
 FROM base AS builder
